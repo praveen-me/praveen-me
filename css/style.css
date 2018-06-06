@@ -121,6 +121,7 @@ p#about-header{
   }
 }
 
+
 /* About CSS Ends */
 
 /* Contact CSS Starts */
@@ -213,6 +214,12 @@ div#show-container.btn, div#hide-container.btn{
   background-color: #26a69a ;
   height: 32px;
 }
+
+@media screen and (max-width : 415px) {
+  div#show-container.col.s12.btn.container{
+    font-size: 20px;
+  }
+}
 /* Project Section CSS Ends */
 
 
@@ -267,57 +274,6 @@ div#show-container.btn, div#hide-container.btn{
 
 
 /* Blog CSS Starts */
-/* .blog-card{
-  width: 100%;
-  border: 1px solid #DDD;
-  box-sizing: border-box;
-  box-shadow: 2px 1px 3px 3px #000000ab;
-  height: 300px;
-  margin-bottom: 1em;
-  border-radius: 5px;
-  background-color: rgba(0,0,0,0.2);
-  z-index: -1;
-}
-.blog-card:hover{
-  box-shadow: 1px 1px #000000ab;
-  transition: box-shadow 0.5s ease;
-}
-.blog-image-section-details-also{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.project-card-one{
-  background-image: url('../images/project1.png');
-}
-.project-card-two{
-    background-image: url('../images/project2.png');
-}
-.blog-link{
-  position: absolute;
-  bottom: 0;
-  color: #000;
-  width: 50%;
-  height: 20%;
-  text-align: center;
-}
-.blog-link i{
-  padding-top: 0.3em;
-  vertical-align: middle;
-  font-size: 40px;
-}
-.blog-card-head{
-  width: 100%;
-  display: block;
-  position: absolute;
-  font-weight: 385;
-  bottom: 18%;
-  color : #fff ;
-  background-color: rgba(0,0,0,0.8);
-} */
 
 .blog-card{
   width: 100%;
@@ -386,10 +342,16 @@ div#show-container.btn, div#hide-container.btn{
   position: absolute;
   font-size: 25px;
   vertical-align: middle;
-  left: 50%;
+  left: 45%;
   margin: 0;
   top: 10%;
   margin: 0;
   color: #000;
   word-spacing: 0.5em;
+}
+
+@media screen and (max-width : 600px) {
+  .footer-text{
+    left: 40%;
+  }
 }
