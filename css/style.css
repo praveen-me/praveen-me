@@ -1,0 +1,395 @@
+/* Custom Stylesheet */
+
+body{
+  position: relative;
+  transition: all .1s ease;
+}
+
+/* Navbar CSS */
+.fixed{
+  position: relative;
+}
+
+.button-collapse{
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  padding-left: 1em;
+}
+.button-collapse i{
+  font-size: 3em;
+  color: #fff;
+}
+
+.side-nav{
+  background-color: #006064;
+}
+
+@media screen and (min-width : 995px) {
+  #logo-container{
+    padding-left: 3em;
+  }
+  ul.right{
+    padding-right: 1em;
+  }
+}
+
+#nav-mobile{
+  padding-top: 5em;
+}
+#nav-mobile li:hover{
+  background-color: #fff;
+}
+#nav-mobile li a{
+  font-size: 30px;
+  font-weight: 300;
+}
+#nav-mobile li a:hover{
+  color: #000;
+}
+
+/* Navbar CSS Ends */
+
+/* About Section CSS */
+p#about-header{
+  font-size: 32px;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.about-lines{
+  margin: 0.3em;
+  font-size: 2em;
+  font-weight: 300;
+  border-radius: 5px;
+  display: block;
+}
+
+#about .parallax-container{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.fa-heart{
+  color: #b71c1c;
+}
+
+     /* About Section Media Queries */
+@media screen and (max-width : 550px) {
+  #about .parallax-container .parallax img {
+    left: 58%;
+    bottom: -23%;
+    min-width: 125%;
+  }
+  p#about-header{
+    font-size: 30px;
+  }
+}
+@media screen and (min-width : 551px) and (max-width : 750px) {
+  #about .parallax-container .parallax img {
+    left: 61%;
+    bottom: -51%;
+    min-width: 125%;
+  }
+  p#about-header{
+    font-size: 45px;
+  }
+}
+@media screen and (min-width : 751px) and (max-width : 1000px) {
+  #about .parallax-container .parallax img {
+    bottom: -50%;
+  }
+  p#about-header{
+    font-size: 55px;
+  }
+}
+
+@media screen and (min-width : 1001px) and (max-width : 1150px){
+  #about .parallax-container .parallax img {
+    bottom: -63%;
+  }
+  p#about-header{
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width : 1151px) {
+  #about .parallax-container .parallax img {
+    bottom : -80%;
+  }
+  p#about-header{
+    font-size: 65px;
+  }
+}
+
+/* About CSS Ends */
+
+/* Contact CSS Starts */
+
+.contact{
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+.contact-list .contact-list-item{
+  float: right;
+  width: 25%;
+}
+
+.contact-list .contact-list-item:hover{
+  background-color: #006064 !important;
+}
+
+.contact-list .contact-list-item a i{
+  font-size: 35px;
+  color: rgba(0,0,0,1)
+}
+
+/* Contact CSS Ends */
+
+/* Projects Section CSS Starts */
+.project-card{
+  width: 100%;
+  border: 1px solid #DDD;
+  box-sizing: border-box;
+  box-shadow: 2px 1px 3px 3px #000000ab;
+  height: 300px;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.2);
+  z-index: -1;
+}
+.project-card:hover{
+  box-shadow: 1px 1px #000000ab;
+  transition: box-shadow 0.5s ease;
+}
+.project-image-section-details-also{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project-card-one{
+  background-image: url('../images/project1.png');
+}
+.project-card-two{
+    background-image: url('../images/project2.png');
+}
+.project-link{
+  position: absolute;
+  bottom: 0;
+  color: #000;
+  width: 50%;
+  height: 20%;
+  text-align: center;
+}
+.project-link i{
+  padding-top: 0.3em;
+  vertical-align: middle;
+  font-size: 40px;
+}
+.project-link-second{
+  left: 50%;
+}
+.project-card-head{
+  width: 100%;
+  display: block;
+  position: absolute;
+  font-weight: 385;
+  bottom: 18%;
+  color : #fff  ;
+  background-color: rgba(0,0,0,0.8);
+}
+.project-card-three, .project-card-four, .project-card-five, .project-card-six, .project-card-seven, .project-card-eight, .project-card-nine {
+  background-image: url('../images/coming_soon.jpg');
+}
+
+div#show-container.btn, div#hide-container.btn{
+  color: #000;
+  font-size: 30px;
+  font-weight: 300;
+  background-color: #26a69a ;
+  height: 32px;
+}
+/* Project Section CSS Ends */
+
+
+/* Skills Section CSS Starts */
+.skill-icons{
+  font-size: 6em;
+}
+#skills {
+  margin-top: 5em;
+}
+
+#skills .parallax-container{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width : 600px) {
+  .skills-col.s12{
+    margin: 5%;
+  }
+}
+
+@media screen and (min-width : 911px) {
+   #skills .parallax-container{
+    position: relative;
+    overflow: hidden;
+    height: 250px !important;
+  }
+  .skills-col{
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+}
+
+@media screen and (min-width : 601px) and (max-width : 910px) {
+  #skills .parallax-container{
+    height: 350px;
+  }
+  .skills-col{
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+}
+
+@media screen and (min-width : 911px) and (max-width : 992px) {
+  .skills-col{
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
+
+/* Skills Section CSS Ends */
+
+
+/* Blog CSS Starts */
+/* .blog-card{
+  width: 100%;
+  border: 1px solid #DDD;
+  box-sizing: border-box;
+  box-shadow: 2px 1px 3px 3px #000000ab;
+  height: 300px;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.2);
+  z-index: -1;
+}
+.blog-card:hover{
+  box-shadow: 1px 1px #000000ab;
+  transition: box-shadow 0.5s ease;
+}
+.blog-image-section-details-also{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project-card-one{
+  background-image: url('../images/project1.png');
+}
+.project-card-two{
+    background-image: url('../images/project2.png');
+}
+.blog-link{
+  position: absolute;
+  bottom: 0;
+  color: #000;
+  width: 50%;
+  height: 20%;
+  text-align: center;
+}
+.blog-link i{
+  padding-top: 0.3em;
+  vertical-align: middle;
+  font-size: 40px;
+}
+.blog-card-head{
+  width: 100%;
+  display: block;
+  position: absolute;
+  font-weight: 385;
+  bottom: 18%;
+  color : #fff ;
+  background-color: rgba(0,0,0,0.8);
+} */
+
+.blog-card{
+  width: 100%;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  box-shadow: 2px 1px 3px 3px #000000ab;
+  height: 300px;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.2);
+
+  /* BackGround Image CSS */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blog-card:hover{
+  box-shadow: 1px 1px #000000ab;
+  transition: box-shadow 0.5s ease;
+}
+.blog-card-one, .blog-card-two{
+  position: relative;
+}
+
+.blog-card-head{
+  position: absolute;
+  bottom: -276px;
+  color: rgba(255,255,255, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
+  font-weight: 385;
+  display: block;
+  width: 100%;
+}
+
+.blog-link{
+  width: 100%;
+  position: absolute;
+  bottom: -298px;
+}
+
+.blog-bg-one{
+  background-image: url('../images/blog-1.png');
+}
+
+.blog-bg-two{
+  background-image: url('../images/coming_soon.jpg');
+}
+
+.blog-link i{
+  color: #000;
+  font-size: 25px;
+}
+/* Blog CSS Ends */
+
+.page-footer{
+  position: absolute;
+  padding-top: 0;
+  color: #fff;
+  background-color: #006064;
+  height: 45px;
+  bottom: -7.5%;
+  width: 100%;
+}
+
+.footer-text{
+  position: absolute;
+  font-size: 25px;
+  vertical-align: middle;
+  left: 50%;
+  margin: 0;
+  top: 10%;
+  margin: 0;
+  color: #000;
+  word-spacing: 0.5em;
+}
