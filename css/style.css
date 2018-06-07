@@ -82,6 +82,7 @@ p#about-header {
   font-weight: 300;
   border-radius: 5px;
   display: block;
+  color: #fff;
 }
 
 
@@ -106,7 +107,7 @@ p#about-header {
 
 
   p#about-header {
-    font-size: 30px;
+    font-size: 26px;
   }
 
 }
@@ -308,6 +309,23 @@ div#show-container.btn, div#hide-container.btn {
 
 #skills .parallax-container {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.fa-html5 {
+  color: #e44d26;
+}
+
+.fa-css3 {
+  color: #0268b0;
+}
+
+.fa-js-square {
+  color: #f5e01f;
+}
+
+.fa-python {
+  color: #26a69a;
 }
 
 
