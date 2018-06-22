@@ -272,7 +272,11 @@ p#about-header {
 }
 
 
-.project-card-three, .project-card-four, .project-card-five, .project-card-six, .project-card-seven, .project-card-eight, .project-card-nine {
+.project-card-three {
+  background-image: url('../images/pixel-art-maker.png');
+}
+
+.project-card-four, .project-card-five, .project-card-six, .project-card-seven, .project-card-eight, .project-card-nine {
   background-image: url('../images/coming_soon.jpg');
 }
 
