@@ -1,0 +1,377 @@
+@import "reset";
+@import "vars";
+@import "mixin";
+@import "base";
+
+// Header CSS Starts
+.header {
+    background-color: rgba(0,0,0, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav_item {
+    padding: 10px 16px;
+    text-transform: uppercase;
+    &:hover {
+        background-color: complement(rgba(0,0,0, 0.8));
+    }
+}
+
+.nav_link {
+    color: #fff;
+    font-size: 1.5rem;
+}
+// Header CSS Ends
+
+// Main CSS Starts
+
+// hero section
+.hero {
+    background: linear-gradient(0deg,rgba(#000,0.7),rgba(#000,0.7)),url(../../images/hero-bg.jpg);
+    height: 100vh;
+    padding: 5rem 0;
+    position: relative;
+}
+
+.hero_details_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero_img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 1rem solid rgba(#fff, 0.3);
+}
+
+.hero_subtitle {
+    font-family: $font-family;
+    margin: 2rem 0;
+}
+
+.social_pack {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.social_item {
+    padding: 0 1rem;
+}
+
+.social_link {
+    color : #fff;
+    font-size: 1.5rem;
+    i{
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            transform : scale(1.5);
+        }
+    }
+}
+
+// About
+.sub_head {
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    color: #795548;
+}
+
+.about-me_content_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.about-me_img {
+    padding: 2rem;
+}
+
+.about-me_name {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.about-me_work {
+    font-size: 1.5rem;
+}
+
+.about-me_text {
+    margin: 2rem 0;
+}
+
+.about-me_content {
+    padding: 0 2rem;
+}
+
+.about-me_para {
+    font-family: $font-family;
+    font-size: 1.2rem;
+    margin: 2rem 0;
+    line-height: 1.5rem;
+    color: #422e27;
+}
+
+// Skills
+.skills {
+    background: linear-gradient(0deg,rgba(#000,0.7),rgba(#000,0.7)),url(../../images/skill-bg.jpg);
+}
+
+.skills_header+.sub_head {
+    color: #fff;
+}
+
+.skill_item {
+    line-height: 3rem;
+    display: flex;
+    border-radius: 3px;
+    margin: 2rem 0;
+    padding: 0 2rem;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.skill_item_wrapper {
+    display: grid;
+    grid-gap: 1rem 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.skill_item_name {
+    width: 20%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color : #fff;
+}
+
+.skill_value_container {
+    width: 80%;
+    display: flex;
+}
+
+.skill_item_value {
+    height: 100%;
+}
+
+.skill_item_left {
+    flex-grow: 1;
+    padding-right: 10px;
+    background-color: #CFCFCF;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: bold;
+}
+
+.skill_item_value-1 {
+    width: 60%;
+    background-color: rgb(230, 126, 34);
+}
+
+.skill_item_name-1 {
+    background-color: #D35400;
+}
+
+.skill_item_name-2 {
+    background-color: #2980B9;
+}
+
+.skill_item_value-2 {
+    width: 40%;
+    background-color: rgb(52, 152, 219);
+}
+
+.skill_item_name-3 {
+    background-color: #cf649a;
+}
+
+.skill_item_value-3 {
+    width: 50%;
+    background-color: #f377b5;
+}
+
+.skill_item_name-4 {
+    background-color: #eeb12c;
+}
+
+.skill_item_value-4 {
+    width: 40%;
+    background-color: #f7bf47;
+}
+
+.skill_item_name-5 {
+    background-color: #46465E;
+}
+
+.skill_item_value-5 {
+    width: 50%;
+    background-color: rgb(90, 104, 165);
+}
+
+.skill_item_name-6 {
+    background-color: #402e27;
+}
+
+.skill_item_value-6 {
+    width: 45%;
+    background-color: #564136;
+}
+
+// Projects
+.project_item { 
+    position: relative;
+    box-shadow: 7px 8px 10px 0px #75757545;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    &:hover .project_item_overlay {
+        opacity: 1;
+    }
+}
+
+.project_item_overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000000c7;
+    color: #fff;
+    left: 0;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+    .project_link {
+        color: #fff;
+    }
+}
+
+.project_link {
+    font-size: 2rem;
+    color: #000;
+    margin: 1rem 0;
+}
+
+.projects_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 275px);
+    grid-template-rows: 300px;
+    grid-gap: 2rem;
+    justify-content: space-around;
+
+}
+
+.project_name {
+    text-align: center;
+    font-size: 2rem;
+}
+
+// Blogs
+.blogs {
+    background: linear-gradient(0deg,rgba(#000,0.7),rgba(#000,0.7)),url(../../images/blogs_bg.jpg);
+}
+
+.blog_sub_head {
+    color: #fff;
+}
+
+.blog_items_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 0.8fr);
+    grid-gap: 2rem;
+}
+
+.blog_item {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    img {
+        max-height: 300px;
+        border-radius: 5px;
+    }
+}
+
+.blog_item_head {
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.blog_item_text {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #795548;
+}
+
+.blog_item_link {
+    border-radius: 5px;
+    border: 0;
+    margin: 2rem 0 0 0;
+    a {
+        color: #fff;
+        font-weight: bold;
+        font-family: $font-family1;
+    }
+    &:hover {
+        background-color: #1a1a1a;
+    }
+}
+
+
+
+// Main CSS Ends
+
+@media screen and (max-width : 780px) {
+    .about-me_content_wrapper {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto auto;
+    }
+    
+    .skill_item_wrapper {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        padding: 0 2rem;
+    }
+
+    .projects_wrapper {
+        grid-template-columns: 275px;
+        grid-auto-rows: 275px;
+        padding: 2rem;
+    }
+
+    .project_name {
+        font-size: 1.5rem;
+    }
+
+    .blog_items_wrapper {
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width : 450px) {
+    .skill_item_name  {
+        font-size: 1rem;
+    }
+
+    .blog_items_wrapper {
+        grid-template-columns: 1fr;
+        padding: 0 2rem;
+    }
+}
