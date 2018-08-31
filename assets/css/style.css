@@ -376,9 +376,16 @@ img {
   .blog_item_link a {
     color: #fff;
     font-weight: bold;
-    font-family: "Open Sans Condensed", sans-serif; }
+    font-family: "Open Sans Condensed", sans-serif;
+    letter-spacing: 0.08rem; }
   .blog_item_link:hover {
     background-color: #1a1a1a; }
+
+footer {
+  padding: 1rem; }
+
+.footer_text {
+  font-weight: bold; }
 
 @media screen and (max-width: 780px) {
   .about-me_content_wrapper {

@@ -35,7 +35,7 @@
 
 // hero section
 .hero {
-    background: linear-gradient(0deg,rgba(#000,0.7),rgba(#000,0.7)),url(../../images/hero-bg.jpg);
+    background: linear-gradient(0deg,rgba(#000,0.7),rgba(#000,0.7)),url(../images/hero-bg.jpg);
     height: 100vh;
     padding: 5rem 0;
     position: relative;
@@ -126,7 +126,7 @@
 
 // Skills
 .skills {
-    background: linear-gradient(0deg,rgba(#000,0.7),rgba(#000,0.7)),url(../../images/skill-bg.jpg);
+    background: linear-gradient(0deg,rgba(#000,0.7),rgba(#000,0.7)),url(../images/skill-bg.jpg);
 }
 
 .skills_header+.sub_head {
@@ -286,7 +286,7 @@
 
 // Blogs
 .blogs {
-    background: linear-gradient(0deg,rgba(#000,0.7),rgba(#000,0.7)),url(../../images/blogs_bg.jpg);
+    background: linear-gradient(0deg,rgba(#000,0.7),rgba(#000,0.7)),url(../images/blogs_bg.jpg);
 }
 
 .blog_sub_head {
@@ -328,15 +328,25 @@
         color: #fff;
         font-weight: bold;
         font-family: $font-family1;
+        letter-spacing: 0.08rem;
     }
     &:hover {
         background-color: #1a1a1a;
     }
 }
 
-
-
 // Main CSS Ends
+
+// Footer Starts Here
+footer {
+    padding: 1rem;
+}
+
+.footer_text {
+    font-weight: bold;
+}
+
+// Footer Starts Ends
 
 @media screen and (max-width : 780px) {
     .about-me_content_wrapper {
