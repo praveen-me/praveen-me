@@ -27,9 +27,19 @@ categories: jekyll update
     color : chocolate;
     font-weight : bold;
   }
+
+  .called_function {
+    letter-spacing : 0.1rem;
+    font-weight : bold;
+    color : #1689bd;
+  }
+
+  img {
+    width: 100%;0
+  }
 </style>
 
-![](/assets/images/blog_2_images/javscript_scopes.png)
+![](/assets/images/blog_2_images/blog_banner.png)
 
 In generally __scope__ is like an limeted area. Scopes are the essential part of every progarmming language. They are behaving like a limeted space for a declaration i.e where every variable is declared and what part of the program that variable can be accessible.
 
@@ -68,7 +78,7 @@ a   //Think and let's give it a moment ??
 So, the value of the variable should be changed or not. Let's know it by running it.
 
 ![](/assets/images/blog_2_images/image_global.png) <br>
-It changed because the varible __a__ is accessible inside the function because it is declared globally. So, when we call the __iAmLocal()__ function, that reassigned the value of __a__ again.
+It changed because the varible __a__ is accessible inside the function because it is declared globally. So, when we call the <span class="called_function">imAmLocal()</span> function, that reassigned the value of __a__ again.
 Now, let's go to local scope.
 
 ## What is Local Scope?
@@ -87,7 +97,7 @@ b; //??
 ```
 Let's access the variable outside the function.
 ![](/assets/images/blog_2_images/image_local.png)
-OOPS!! It's says an <span class="error">error</span> because now the engine looks for the variable __b__ is defined outside that __iAmLocal()__ function because that's the global scope but it doesn't got the value of the variable __b__. So, that's why it returns an <span class="error">error</span>.
+OOPS!! It's says an <span class="error">error</span> because now the engine looks for the variable __b__ is defined outside that <span class="called_function">iAmLocal()</span> function because that's the global scope but it doesn't got the value of the variable __b__. So, that's why it returns an <span class="error">error</span>.
 
 Let's take an another example:-
 ```
@@ -102,36 +112,42 @@ function sum() {
   }
 
   //calling secondNumber() and storing it in a variable
-  var sum = secondNumber();
+  var result = secondNumber();
 
   return result;
 }
 ```
-So, can we access __a__ inside the __secondNumber()__. Let's try it by running it. If we get <span class="value">15</span>, that means we can.
-![](/assets/images/blog_2_images/image_local_2_short.png)
+So, can we access __a__ inside the <span class="called_function">secondNumber()</span>. Let's try it by running it. If we get <span class="value">15</span>, that means we can.
+![](/assets/images/blog_2_images/image_local_2_long.png)
 Yes, It is. <br>
 
 ### __Why is that happen?__
-Because when __sum()__ is declared it creates it's own scope and the variables that are declared inside it can be accessible inside that scope so when 
+Because when <span class="called_function">sum()</span> is declared it creates it's own scope and the variables that are declared inside it can be accessible limited to scope of the <span class="called_function">sum()</span>. But when we declaring the <span class="called_function">secondNumber()</span> function inside the <span class="called_function">sum()</span> it also creates it's own scope. So, when we called <span class="called_function">secondNumber()</span> it goona look for the value of __a__. It doesn't find __a__ it goes to it parent and check if there's __a__ is not. Ya, It's find there and execute that value successfully.
 
+### == Lexical Scope ==
+So, Lexical Scope is same as the nested local scopes but there be bit difference between them. In this if the current scope doesn't find the value then it moves outside to that scope and try to find the value there. This process continues untill it finds the value. It kind be boring let's do it by an example :- 
+```
+var num1 = 5; //globally
 
+function add() {
+  var num2 = 8;  //locally
 
-<!-- You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+  return function() {      //returning function
+    return num1 + num2;    //returning function 
+  }                        //returning function
+}
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+var addIt = add();
+addIt(); //?
+```
+So, In the above code sample I declared __num1__ globally because it's outside all the loops. Now, when we declared the <span class="called_function">add()</span> function it creates it's own scope. That's why __num2__ is declared locally so it available in the scope of the <span class="called_function">add()</span> function. So, let's think and look the code carefully that it gives us the <span class="value">13</span> or not. <br> 
+Let's execute it :-
+![](/assets/images/blog_2_images/lexical_scope.png)
 
-Jekyll also offers powerful support for code snippets:
+**_So, what happened here?_** <br>
+Let's go on that line where we called the <span class="called_function">add()</span> and stored this in the variable called __addIt()__. So, now __addIt__ holds the return function that is returned by the <span class="called_function">add()</span> function and when we call the returned function we got the correct answer. So, the thing is that how can it access the value of __num1__. So, I write above that if variable doesn't find it's value inside that function so it bubbles out i.e it goes upwards. So, now in the function that is returned by the <span class="called_function">add()</span> function. Now, __num1__ finds that is my value presented in this scope, it doesn't so it moves in the scope of the <span class="called_function">add()</span> a nd checks it that my value is presented here or not. No, It goes to the global scope there it finds the value and execute it.
+So, the process of bubbling out and find it's value is called **lexical scope**. <br>
+If it doesn't find the value then it returns an <span class="error">error</span> saying that variable is not defined.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/ -->
+## Let & Const -> How They Effect Scope
+So, <span class="value">let</span> and <span class="value">const</span> are new members in the family of variables declarations in JavaScript. So, they helps us to create scope and helps the variable to not get hoisted.
