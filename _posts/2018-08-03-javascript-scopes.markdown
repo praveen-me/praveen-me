@@ -150,4 +150,15 @@ So, the process of bubbling out and find it's value is called **lexical scope**.
 If it doesn't find the value then it returns an <span class="error">error</span> saying that variable is not defined.
 
 ## Let & Const -> How They Effect Scope
-So, <span class="value">let</span> and <span class="value">const</span> are new members in the family of variables declarations in JavaScript. So, they helps us to create scope and helps the variable to not get hoisted.
+So, <span class="value">let</span> and <span class="value">const</span> are new members in the family of variables declarations in JavaScript. So, they helps us to create scope and helps the variable to not get hoisted. <br>
+Let's take an example:-   
+```
+for(var i = 1; i <= 10; i++) {
+  console.log(i);
+}
+
+i;  //Can I access it out side??.
+```
+Let's check out it:-
+![](/assets/images/blog_2_images/let_var_first.png)
+So, we can access the variable __i__ out side the loop because we know that only function can create their own scope. So, <span class="called_function">for loop</span> declared in the global scope.
