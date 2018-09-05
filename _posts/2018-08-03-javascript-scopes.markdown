@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Craziness of Scopes in JavaScript"
+title:  "Scope!! What Is This?"
 date:   2018-08-06 21:45:53 +0530
 categories: jekyll update
 ---
@@ -41,7 +41,7 @@ categories: jekyll update
 
 ![](/assets/images/blog_2_images/blog_banner.png)
 
-In generally __scope__ is like an limeted area. Scopes are the essential part of every progarmming language. They are behaving like a limeted space for a declaration i.e where every variable is declared and what part of the program that variable can be accessible.
+In generally __scope__ is like an limeted area. Scopes are the essential part of every programming language. They are behaving like a limeted space for a declaration i.e where every variable is declared and what part of the program that variable can be accessible.
 
 As [MDN](https://developer.mozilla.org/en-US/docs/Glossary/Scope) Says - __The context in which values and expressions are "visible," or can be referenced.__
 
@@ -73,12 +73,12 @@ function iAmLocal() {
 
 iAmLocal();
 
-a   //Think and let's give it a moment ??
+a;   //Think and let's give it a moment ??
 ```
 So, the value of the variable should be changed or not. Let's know it by running it.
 
 ![](/assets/images/blog_2_images/image_global.png) <br>
-It changed because the varible __a__ is accessible inside the function because it is declared globally. So, when we call the <span class="called_function">imAmLocal()</span> function, that reassigned the value of __a__ again.
+It changed because the variable __a__ is accessible inside the function because it is declared globally. So, when we call the <span class="called_function">imAmLocal()</span> function, that reassigned the value of __a__ again.
 Now, let's go to local scope.
 
 ## What is Local Scope?
@@ -97,7 +97,7 @@ b; //??
 ```
 Let's access the variable outside the function.
 ![](/assets/images/blog_2_images/image_local.png)
-OOPS!! It's says an <span class="error">error</span> because now the engine looks for the variable __b__ is defined outside that <span class="called_function">iAmLocal()</span> function because that's the global scope but it doesn't got the value of the variable __b__. So, that's why it returns an <span class="error">error</span>.
+OOPS!! It's says an <span class="error">error</span> because now the engine looks for the variable __b__ globally but it can't find the value because it is declared in the <span class="called_function">iAmLocal()</span>. So, that's why it returns an <span class="error">error</span>.
 
 Let's take an another example:-
 ```
@@ -161,4 +161,16 @@ i;  //Can I access it out side??.
 ```
 Let's check out it:-
 ![](/assets/images/blog_2_images/let_var_first.png)
-So, we can access the variable __i__ out side the loop because we know that only function can create their own scope. So, <span class="called_function">for loop</span> declared in the global scope.
+So, we can access the variable __i__ out side the loop because we know that only function can create their own scope. So, <span class="called_function">for loop</span> declared in the global scope. That's why in the last when the loop got executed we got the increased value of __i__.
+
+Let's do it again but put <span class="value">let</span> instead of <span class="value">var</span> :-
+```
+for(let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+
+i; //Can I access i now??
+```
+![](/assets/images/blog_2_images/let_var_2.png)
+Ya, it said a <span class="error">error</span> saying *__i__ is not defined* because <span class="value">let</span> creates a scope to that varible. <br>
+<span class="value">const</span> is also same as the <span class="value">let</span> but you can't reassigned a value again. So, assigning value with <span class="value">var</span>,<span class="value">let</span> and <span class="value">const</span> depends on your need that you want to access that variable locally or want to update the varaiable as value reassigned to it.
