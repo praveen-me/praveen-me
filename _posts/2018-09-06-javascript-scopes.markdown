@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Scope!! What Is This?"
-date:   2018-08-06 21:45:53 +0530
+title:  "Scope: Local, Global and Lexical"
+# date:   2018-08-06 21:45:53 +0530
 categories: jekyll update
 ---
 <!-- External Font -->
@@ -41,40 +41,25 @@ categories: jekyll update
 
 ![](/assets/images/blog_2_images/blog_banner.png)
 
-In generally __scope__ is like an limeted area. Scopes are the essential part of every programming language. They are behaving like a limeted space for a declaration i.e where every variable is declared and what part of the program that variable can be accessible.
+ __Scope__ is like an limeted area. Scopes are the essential part of every programming language. They are behaving like a limeted space for a declaration i.e where every variable is declared and what part of the program that variable can be accessible.
 
 As [MDN](https://developer.mozilla.org/en-US/docs/Glossary/Scope) Says - __The context in which values and expressions are "visible," or can be referenced.__
 
-In generally there are two types of scopes:-
+There are two types of scopes:-
 * Global Scope
 * Local Scope <br>
 But I also gonna talk about __Lexical Scope__.
 
 ## What is Global Scope?
-Global Scope is term used when a variable is declared outside any of the functions i.e the variables should be declared globally. 
+Global Scope is term used when a variable is declared outside any of the functions i.e the variables should be declared globally.
 
-```
-var a = 'global';               //I am a global scope
-function iAmLocal() {           //I am a global scope
-  console.log(a) // 'global'  
-}                               //I am a global scope
-```
+<script src="https://gist.github.com/praveen-me/878223adafee1b3177e641db6504c6c1.js"></script>
 
 So, If you look at the above function there's variable __a__ is declared globally and it can accessed inside functions. But as we know functions also created there's own scope. But here's the variable is declared in global scope.
 So, the point is that if we declared a variable globally it can be accessed inside a function.
 
 Lets's take an another example :-
-```
-var a = 'global'; 
-
-function iAmLocal() {
-  a = 'is I am local';
-}
-
-iAmLocal();
-
-a;   //Think and let's give it a moment ??
-```
+<script src="https://gist.github.com/praveen-me/b52804abada6bc1eed2931f3c8b5bd00.js"></script>
 So, the value of the variable should be changed or not. Let's know it by running it.
 
 ![](/assets/images/blog_2_images/image_global.png) <br>
@@ -85,38 +70,13 @@ Now, let's go to local scope.
 As we know that when we declare a function it creates it's own scope. So, whenever a function is declared it creates it's local scope which is limited to that function.
 So, it means that if you are declared a variable inside a function it's limited to it.
 So, Let's understand it by a code example :-
-```
-var a = 'global';
-
-function iAMLocal() {
-  var b = 'local';
-}
-
-a; //'global'
-b; //??
-```
+<script src="https://gist.github.com/praveen-me/d963cd28f6b03fc78f29053eb3f7c520.js"></script>
 Let's access the variable outside the function.
 ![](/assets/images/blog_2_images/image_local.png)
 OOPS!! It's says an <span class="error">error</span> because now the engine looks for the variable __b__ globally but it can't find the value because it is declared in the <span class="called_function">iAmLocal()</span>. So, that's why it returns an <span class="error">error</span>.
 
 Let's take an another example:-
-```
-function sum() {
-  var a = 5;
-  var result = 0;
-
-  // Declaring second function
-  function secondNumber() {
-    var b = 10;
-    return a+b;
-  }
-
-  //calling secondNumber() and storing it in a variable
-  var result = secondNumber();
-
-  return result;
-}
-```
+<script src="https://gist.github.com/praveen-me/a0e046c1f847acb67f6e5fd8b4838352.js"></script>
 So, can we access __a__ inside the <span class="called_function">secondNumber()</span>. Let's try it by running it. If we get <span class="value">15</span>, that means we can.
 ![](/assets/images/blog_2_images/image_local_2_long.png)
 Yes, It is. <br>
@@ -126,20 +86,7 @@ Because when <span class="called_function">sum()</span> is declared it creates i
 
 ### == Lexical Scope ==
 So, Lexical Scope is same as the nested local scopes but there be bit difference between them. In this if the current scope doesn't find the value then it moves outside to that scope and try to find the value there. This process continues untill it finds the value. It kind be boring let's do it by an example :- 
-```
-var num1 = 5; //globally
-
-function add() {
-  var num2 = 8;  //locally
-
-  return function() {      //returning function
-    return num1 + num2;    //returning function 
-  }                        //returning function
-}
-
-var addIt = add();
-addIt(); //?
-```
+<script src="https://gist.github.com/praveen-me/5dcbf7f4b88b4409f0e0deade640da87.js"></script>
 So, In the above code sample I declared __num1__ globally because it's outside all the loops. Now, when we declared the <span class="called_function">add()</span> function it creates it's own scope. That's why __num2__ is declared locally so it available in the scope of the <span class="called_function">add()</span> function. So, let's think and look the code carefully that it gives us the <span class="value">13</span> or not. <br> 
 Let's execute it :-
 ![](/assets/images/blog_2_images/lexical_scope.png)
@@ -152,25 +99,13 @@ If it doesn't find the value then it returns an <span class="error">error</span>
 ## Let & Const -> How They Effect Scope
 So, <span class="value">let</span> and <span class="value">const</span> are new members in the family of variables declarations in JavaScript. So, they helps us to create scope and helps the variable to not get hoisted. <br>
 Let's take an example:-   
-```
-for(var i = 1; i <= 10; i++) {
-  console.log(i);
-}
-
-i;  //Can I access it out side??.
-```
+<script src="https://gist.github.com/praveen-me/297e770065fe172c48f7efbd8e657ee8.js"></script>
 Let's check out it:-
 ![](/assets/images/blog_2_images/let_var_first.png)
 So, we can access the variable __i__ out side the loop because we know that only function can create their own scope. So, <span class="called_function">for loop</span> declared in the global scope. That's why in the last when the loop got executed we got the increased value of __i__.
 
 Let's do it again but put <span class="value">let</span> instead of <span class="value">var</span> :-
-```
-for(let i = 1; i <= 10; i++) {
-  console.log(i);
-}
-
-i; //Can I access i now??
-```
+<script src="https://gist.github.com/praveen-me/d6cebc441a4dcb8e34dc5887d0e36cac.js"></script>
 ![](/assets/images/blog_2_images/let_var_2.png)
 Ya, it said a <span class="error">error</span> saying *__i__ is not defined* because <span class="value">let</span> creates a scope to that varible. <br>
 <span class="value">const</span> is also same as the <span class="value">let</span> but you can't reassigned a value again. So, assigning value with <span class="value">var</span>,<span class="value">let</span> and <span class="value">const</span> depends on your need that you want to access that variable locally or want to update the varaiable as value reassigned to it.
