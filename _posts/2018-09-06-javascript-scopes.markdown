@@ -48,26 +48,26 @@ As [MDN](https://developer.mozilla.org/en-US/docs/Glossary/Scope) Says - __The c
 There are two types of scopes:-
 * Global Scope
 * Local Scope <br>
-But I also gonna talk about __Lexical Scope__.
+But I also going to talk about __Lexical Scope__.
 
 ## What is Global Scope?
 Global Scope is term used when a variable is declared outside any of the functions i.e the variables should be declared globally.
 
 <script src="https://gist.github.com/praveen-me/878223adafee1b3177e641db6504c6c1.js"></script>
 
-So, If you look at the above function there's variable __a__ is declared globally and it can accessed inside functions. But as we know functions also created there's own scope. But here's the variable is declared in global scope.
+So, If you look at the above function there's variable __a__ is declared globally and it can be accessed inside function. Here, <span class="called_function">iAmLocal</span> function creted it's own scope. But here's the variable is declared in global scope.
 So, the point is that if we declared a variable globally it can be accessed inside a function.
 
 Lets's take an another example :-
 <script src="https://gist.github.com/praveen-me/b52804abada6bc1eed2931f3c8b5bd00.js"></script>
-So, the value of the variable should be changed or not. Let's know it by running it.
+So, the value of the variable should be changed or not. Let's know it by executing it.
 
 ![](/assets/images/blog_2_images/image_global.png) <br>
 It changed because the variable __a__ is accessible inside the function because it is declared globally. So, when we call the <span class="called_function">imAmLocal()</span> function, that reassigned the value of __a__ again.
 Now, let's go to local scope.
 
 ## What is Local Scope?
-As we know that when we declare a function it creates it's own scope. So, whenever a function is declared it creates it's local scope which is limited to that function.
+ When we declare a function it creates it's own scope. So, whenever a function is declared it creates it's local scope which is limited to that function.
 So, it means that if you are declared a variable inside a function it's limited to it.
 So, Let's understand it by a code example :-
 <script src="https://gist.github.com/praveen-me/d963cd28f6b03fc78f29053eb3f7c520.js"></script>
@@ -85,15 +85,15 @@ Yes, It is. <br>
 Because when <span class="called_function">sum()</span> is declared it creates it's own scope and the variables that are declared inside it can be accessible limited to scope of the <span class="called_function">sum()</span>. But when we declaring the <span class="called_function">secondNumber()</span> function inside the <span class="called_function">sum()</span> it also creates it's own scope. So, when we called <span class="called_function">secondNumber()</span> it goona look for the value of __a__. It doesn't find __a__ it goes to it parent and check if there's __a__ is not. Ya, It's find there and execute that value successfully.
 
 ### == Lexical Scope ==
-So, Lexical Scope is same as the nested local scopes but there be bit difference between them. In this if the current scope doesn't find the value then it moves outside to that scope and try to find the value there. This process continues untill it finds the value. It kind be boring let's do it by an example :- 
+So, Lexical Scope is same as the nested local scopes but there be bit difference between them. In this if the current scope doesn't find the value then it moves outside to that scope and try to find the value there. This process continues untill it finds the value. Let's do it by an example :- 
 <script src="https://gist.github.com/praveen-me/5dcbf7f4b88b4409f0e0deade640da87.js"></script>
 So, In the above code sample I declared __num1__ globally because it's outside all the loops. Now, when we declared the <span class="called_function">add()</span> function it creates it's own scope. That's why __num2__ is declared locally so it available in the scope of the <span class="called_function">add()</span> function. So, let's think and look the code carefully that it gives us the <span class="value">13</span> or not. <br> 
 Let's execute it :-
 ![](/assets/images/blog_2_images/lexical_scope.png)
 
 **_So, what happened here?_** <br>
-Let's go on that line where we called the <span class="called_function">add()</span> and stored this in the variable called __addIt()__. So, now __addIt__ holds the return function that is returned by the <span class="called_function">add()</span> function and when we call the returned function we got the correct answer. So, the thing is that how can it access the value of __num1__. So, I write above that if variable doesn't find it's value inside that function so it bubbles out i.e it goes upwards. So, now in the function that is returned by the <span class="called_function">add()</span> function. Now, __num1__ finds that is my value presented in this scope, it doesn't so it moves in the scope of the <span class="called_function">add()</span> a nd checks it that my value is presented here or not. No, It goes to the global scope there it finds the value and execute it.
-So, the process of bubbling out and find it's value is called **lexical scope**. <br>
+Let's go on that line where we called the <span class="called_function">add()</span> and stored this in the variable called __addIt()__. So, now __addIt__ holds the return function that is returned by the <span class="called_function">add()</span> function and when we call the returned function we got the correct answer. So, the thing is that how can it access the value of __num1__. So, I write above that if variable doesn't find it's value inside that function so it bubbles out i.e it goes upwards. So, now in the function that is returned by the <span class="called_function">add()</span> function. Now, __num1__ finds that is my value presented in this scope, if it doesn't so it moves in the scope of the <span class="called_function">add()</span> and checks it that my value is presented here or not. No, It goes to the global scope there it finds the value and execute it.
+So, the process of bubbling out and finding it's value is called **lexical scope**. <br>
 If it doesn't find the value then it returns an <span class="error">error</span> saying that variable is not defined.
 
 ## Let & Const -> How They Effect Scope
@@ -108,4 +108,5 @@ Let's do it again but put <span class="value">let</span> instead of <span class=
 <script src="https://gist.github.com/praveen-me/d6cebc441a4dcb8e34dc5887d0e36cac.js"></script>
 ![](/assets/images/blog_2_images/let_var_2.png)
 Ya, it said a <span class="error">error</span> saying *__i__ is not defined* because <span class="value">let</span> creates a scope to that varible. <br>
-<span class="value">const</span> is also same as the <span class="value">let</span> but you can't reassigned a value again. So, assigning value with <span class="value">var</span>,<span class="value">let</span> and <span class="value">const</span> depends on your need that you want to access that variable locally or want to update the varaiable as value reassigned to it.
+<span class="value">const</span> is also same as the <span class="value">let</span> but you can't reassigned a value again. So, assigning value with <span class="value">var</span>, <span class="value">let</span> and <span class="value">const</span> depends on your need that you want to access that variable locally or want to update the varaiable as value reassigned to it.
+
