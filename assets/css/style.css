@@ -138,7 +138,7 @@ img {
 
 .nav_link {
   color: #fff;
-  font-size: 1.5rem; }
+  font-size: 1.2rem; }
 
 .hero {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/hero-bg.jpg);
@@ -313,7 +313,7 @@ img {
   top: 0;
   bottom: 0;
   right: 0;
-  background-color: #000000c7;
+  background-color: #070707e0;
   color: #fff;
   left: 0;
   display: grid;
@@ -357,7 +357,7 @@ img {
   background-color: #fff;
   border-radius: 5px; }
   .blog_item img {
-    max-height: 300px;
+    height: 300px;
     border-radius: 5px; }
 
 .blog_item_head {
