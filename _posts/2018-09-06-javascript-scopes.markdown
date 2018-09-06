@@ -110,3 +110,6 @@ Let's do it again but put <span class="value">let</span> instead of <span class=
 Ya, it said a <span class="error">error</span> saying *__i__ is not defined* because <span class="value">let</span> creates a scope to that varible. <br>
 <span class="value">const</span> is also same as the <span class="value">let</span> but you can't reassigned a value again. So, assigning value with <span class="value">var</span>, <span class="value">let</span> and <span class="value">const</span> depends on your need that you want to access that variable locally or want to update the varaiable as value reassigned to it.
 
+***
+Read it on [Medium]().<br>
+Follow me on [Twitter](https://twitter.com/am_pra_veen).
