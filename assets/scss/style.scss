@@ -1,11 +1,10 @@
 @import "reset";
 @import "vars";
-@import "mixin";
 @import "base";
 
 // Header CSS Starts
 .header {
-    background-color: rgba(0,0,0, 0.5);
+    background-color: rgba(0,0,0, 0.8);
     position: fixed;
     top: 0;
     width: 100%;
@@ -375,10 +374,17 @@ footer {
     }
 }
 
+@media screen and (max-width : 600px) {
+    .blog_items_wrapper {
+        grid-template-columns: 1fr;
+        padding: 0 5rem;
+    }
+}
+
 @media screen and (max-width : 450px) {
     .skill_item_name  {
         font-size: 1rem;
-    }
+    }  
 
     .blog_items_wrapper {
         grid-template-columns: 1fr;
