@@ -41,7 +41,7 @@ categories: jekyll update
 
 ![](/assets/images/blog_2_images/blog_banner.png)
 
- __Scope__ is like an limeted area. Scopes are the essential part of every programming language. They are behaving like a limeted space for a declaration i.e where every variable is declared and what part of the program that variable can be accessible.
+ __Scope__ is like an limited area. Scopes are the essential part of every programming language. They are behaving like a limited space for a declaration i.e where every variable is declared and what part of the program that variable can be accessible.
 
 As [MDN](https://developer.mozilla.org/en-US/docs/Glossary/Scope) Says - __The context in which values and expressions are "visible," or can be referenced.__
 
@@ -111,5 +111,6 @@ Ya, it said a <span class="error">error</span> saying *__i__ is not defined* bec
 <span class="value">const</span> is also same as the <span class="value">let</span> but you can't reassigned a value again. So, assigning value with <span class="value">var</span>, <span class="value">let</span> and <span class="value">const</span> depends on your need that you want to access that variable locally or want to update the varaiable as value reassigned to it.
 
 ***
-Read it on [Medium]().<br>
-Follow me on [Twitter](https://twitter.com/am_pra_veen).
+Read it on [Medium](https://medium.com/@praveenkrsaini0/scope-local-global-and-lexical-e164f53450b3).<br>
+Follow me on [Twitter](https://twitter.com/am_pra_veen). <br>
+Find all the **Gist** on [GitHub](https://gist.github.com/praveen-me).
