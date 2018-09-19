@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,600|Roboto+Mono:300,400,500,700");
+body {
+  font-size: 18px;
+  font-family: 'Dosis', sans-serif; }
+
+.error {
+  color: red;
+  font-weight: bold; }
+
+a {
+  color: blue; }
+
+.value {
+  color: chocolate;
+  font-weight: bold; }
+
+.called_function {
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  color: #1689bd; }
+
+img {
+  width: 70%;
+  margin: 0 auto;
+  display: block; }
+
+p {
+  font-size: 1.2rem;
+  font-weight: 500; }
+
+h2 {
+  font-weight: bold; }
+
+/*# sourceMappingURL=blog.css.map */
