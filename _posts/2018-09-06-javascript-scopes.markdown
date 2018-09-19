@@ -8,36 +8,7 @@ categories: jekyll update
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
 <!-- style -->
-<style>
-  body {
-    font-size : 18px;
-    font-family: 'Roboto', sans-serif;
-  }
-
-  .error {
-    color : red;
-    font-weight : bold;
-  }
-
-  a {
-    color : blue;
-  }
-
-  .value {
-    color : chocolate;
-    font-weight : bold;
-  }
-
-  .called_function {
-    letter-spacing : 0.1rem;
-    font-weight : bold;
-    color : #1689bd;
-  }
-
-  img {
-    width: 100%;0
-  }
-</style>
+<link rel="stylesheet" href="/assets/css/blog.css">
 
 ![](/assets/images/blog_2_images/blog_banner.png)
 
