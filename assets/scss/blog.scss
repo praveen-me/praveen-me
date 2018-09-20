@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500,600|Roboto+Mono:300,400,500,700');
+// @import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500,600|Roboto+Mono:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
   font-size : 18px;
-  font-family: 'Dosis', sans-serif;
-  // font-family: 'Roboto Mono', monospace;
+  // font-family: 'Dosis', sans-serif;
+  font-family: 'Roboto', monospace;
 
 }
 
@@ -34,10 +35,15 @@ img {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   font-weight: 500;
 }
 
 h2 {
   font-weight: bold;
+}
+
+.highlight {
+  color: rgb(22, 79, 102);
+  font-weight: bold; 
 }
