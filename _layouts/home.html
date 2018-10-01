@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Praveen Kumar Saini - Portfolio</title>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
 
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
@@ -29,8 +32,19 @@
                     <a href="#blogs" class="nav_link">blogs</a>
                 </li>
             </ul>
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
         </nav>
+        <div class="menu">
+            <ul>
+                <a onclick="hide()" href="#about" class="nav_link"><li>About me</li></a>
+                <a onclick="hide()" href="#skills" class="nav_link"><li>Skills</li></a>
+                <a onclick="hide()" href="#projects" class="nav_link"><li>Projects</li></a>
+                <a onclick="hide()" href="#blogs" class="nav_link"><li>Blogs</li></a>
+            </ul>
+        </div>
     </header>
+    
 
     <!-- Main Section -->
     <main class="main-section">
@@ -83,11 +97,14 @@
                         <p class="about-me_work">Web Developer</p>
                         <div class="about-me_text">
                             <p class="about-me_para">
-                                I am a currently is in path to be a Web Developer. I think that if have life then make it a some kind of use. I usually spent my time on making lame jokes and coding. Because I think that laughter is also necessary.
+                                I am a currently is in path to be a Web Developer. I think that if have life then make
+                                it a some kind of use. I usually spent my time on making lame jokes and coding. Because
+                                I think that laughter is also necessary.
                             </p>
                             <p class="about-me_para">
-                                It's been 1.5 years that I started coding. And at first I attached to Web Development and I think my kind of work.
-                            </p>    
+                                It's been 1.5 years that I started coding. And at first I attached to Web Development
+                                and I think my kind of work.
+                            </p>
                             </p>
                         </div>
                     </div>
@@ -103,44 +120,44 @@
                 <!-- Skill Items -->
                 <div class="skill_item_wrapper padding">
                     <div class="skill_item">
-                       <div class="skill_item_name skill_item_name-1 center">HTML</div>
-                       <div class="skill_value_container">
-                        <div class="skill_item_value  skill_item_value-1"></div> 
-                        <div class="skill_item_left right">80%</div>
-                       </div>
+                        <div class="skill_item_name skill_item_name-1 center">HTML</div>
+                        <div class="skill_value_container">
+                            <div class="skill_item_value  skill_item_value-1"></div>
+                            <div class="skill_item_left right">80%</div>
+                        </div>
                     </div>
                     <div class="skill_item">
                         <div class="skill_item_name skill_item_name-2 center">CSS3</div>
                         <div class="skill_value_container">
-                            <div class="skill_item_value  skill_item_value-2"></div> 
+                            <div class="skill_item_value  skill_item_value-2"></div>
                             <div class="skill_item_left right">60%</div>
                         </div>
                     </div>
                     <div class="skill_item">
                         <div class="skill_item_name skill_item_name-3 center">SaSS</div>
                         <div class="skill_value_container">
-                            <div class="skill_item_value  skill_item_value-3"></div> 
+                            <div class="skill_item_value  skill_item_value-3"></div>
                             <div class="skill_item_left right">70%</div>
                         </div>
                     </div>
                     <div class="skill_item">
                         <div class="skill_item_name skill_item_name-4 center">JavaScript</div>
                         <div class="skill_value_container">
-                            <div class="skill_item_value  skill_item_value-4"></div> 
+                            <div class="skill_item_value  skill_item_value-4"></div>
                             <div class="skill_item_left right">60%</div>
                         </div>
                     </div>
                     <div class="skill_item">
                         <div class="skill_item_name skill_item_name-5 center">jQuery</div>
                         <div class="skill_value_container">
-                            <div class="skill_item_value  skill_item_value-5"></div> 
+                            <div class="skill_item_value  skill_item_value-5"></div>
                             <div class="skill_item_left right">70%</div>
                         </div>
                     </div>
                     <div class="skill_item">
                         <div class="skill_item_name skill_item_name-6 center">Git</div>
                         <div class="skill_value_container">
-                            <div class="skill_item_value  skill_item_value-6"></div> 
+                            <div class="skill_item_value  skill_item_value-6"></div>
                             <div class="skill_item_left right">65%</div>
                         </div>
                     </div>
@@ -157,7 +174,8 @@
                         <img src="../assets/images/project_1.png" alt="project">
                         <div class="project_item_overlay">
                             <h2 class="project_name">AltCampus Clone</h2>
-                            <a href="https://praveen-me.github.io/html_css_practice/projects/day_10_project/index.html" class="project_link" target="_blank"><i class="fas fa-plus"></i></a>
+                            <a href="https://praveen-me.github.io/html_css_practice/projects/day_10_project/index.html"
+                                class="project_link" target="_blank"><i class="fas fa-plus"></i></a>
                         </div>
                     </div>
                     <div class="project_item">
@@ -171,14 +189,16 @@
                         <img src="../assets/images/project_3.png" alt="project">
                         <div class="project_item_overlay">
                             <h2 class="project_name ">Memory Card Game</h2>
-                            <a href="https://praveen-me.github.io/memory-card-game-fend" class="project_link" target="_blank"><i class="fas fa-plus"></i></a>
+                            <a href="https://praveen-me.github.io/memory-card-game-fend" class="project_link" target="_blank"><i
+                                    class="fas fa-plus"></i></a>
                         </div>
                     </div>
                     <div class="project_item">
                         <img src="../assets/images/project_4.png" alt="project">
                         <div class="project_item_overlay">
                             <h2 class="project_name">Pixel Art Maker</h2>
-                            <a href="https://praveen-me.github.io/pixel-art-maker" class="project_link" target="_blank"><i class="fas fa-plus"></i></a>
+                            <a href="https://praveen-me.github.io/pixel-art-maker" class="project_link" target="_blank"><i
+                                    class="fas fa-plus"></i></a>
                         </div>
                     </div>
                 </div>
@@ -194,15 +214,20 @@
                         <img src="../assets/images/blog_1.png" alt="Blog Image">
                         <h3 class="blog_item_head heading center">Udacity Scholarship Experience</h3>
                         <p class="blog_item_text">
-                            Hey Guys, There’s nothing new in this but you found something special I thought that hold you guys to think for a sec. I am not good a writing .This Scholarships give me hope for that Why should I code because before this I just code it’s just like...
+                            Hey Guys, There’s nothing new in this but you found something special I thought that hold
+                            you guys to think for a sec. I am not good a writing .This Scholarships give me hope for
+                            that Why should I code because before this I just code it’s just like...
                         </p>
-                        <button class="btn blog_item_link"><a href="https://medium.com/@praveenkrsaini0/how-udacity-gave-more-confidence-to-me-c1f46c056b86" target="_blank">Read More</a></button>
+                        <button class="btn blog_item_link"><a href="https://medium.com/@praveenkrsaini0/how-udacity-gave-more-confidence-to-me-c1f46c056b86"
+                                target="_blank">Read More</a></button>
                     </div>
                     <div class="blog_item padding">
                         <img src="../assets/images/blog2_cover.png" alt="Blog Image">
                         <h3 class="blog_item_head heading center">Scopes : Local, Global and Lexical</h3>
                         <p class="blog_item_text">
-                            Scope is like an limeted area. Scopes are the essential part of every programming language. They are behaving like a limeted space for a declaration i.e where every variable is declared and what part of the program that variable can be accessible...
+                            Scope is like an limeted area. Scopes are the essential part of every programming language.
+                            They are behaving like a limeted space for a declaration i.e where every variable is
+                            declared and what part of the program that variable can be accessible...
                         </p>
                         <button class="btn blog_item_link"><a href="/blog/javascript-scopes" target="_blank">Read More</a></button>
                     </div>
@@ -213,12 +238,14 @@
     <!-- Footer -->
     <footer class="footer">
         <h3 class="center footer_text">Copyright @ Praveen <script>
-            document.write(new Date().getFullYear());
-        </script></h3>
+                document.write(new Date().getFullYear());
+            </script>
+        </h3>
     </footer>
 
     <!-- Scripts -->
     <script src="../js/jquery-2.1.1.min.js"></script>
     <script src="../js/custom.js"></script>
 </body>
+
 </html>
