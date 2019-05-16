@@ -1,40 +1,26 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
-import styled from 'styled-components';
 
-const MainLink = styled(Link)`
-  color: white;
-  text-shadow: none;
-  background-image: none;
-  font-weight: 300;
-  transition: all 0.2s ease ;
-  
-  :hover {
-    font-weight: bold;
-  }
-`
+import socialLinks from "../utils/social-links";
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <MainLink
-          to="/"
-        >
-          {siteTitle}
-        </MainLink>
-      </h1>
+  <header className="header" id="top">
+    <a href="#top" className="header__topbar"></a>
+    <div className="header__content-block">
+      <div className="header__logo-sec">
+        <Link to="/" className="header__logo">JS</Link>
+      </div>
+      <div className="header__social-pack">
+        {
+          socialLinks.map( ( link, i ) => (
+            <div className="header__social-sec" key={ link.linkType }>
+              <span> { link.linkType } </span> 
+              <a href={link.socialLink + link.username }> @{ link.username }</a>
+            </div>
+          ) )
+        }        
+      </div>
     </div>
   </header>
 )
