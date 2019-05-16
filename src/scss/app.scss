@@ -1,3 +1,11 @@
-header {
-  background: green;
-}
+// Embeded Fonts
+@import url('https://fonts.googleapis.com/css?family=Hind+Madurai:300,400,500,600,700');
+
+// Adding normalize
+@import './normalize';
+
+// Adding base
+@import './base';
+
+// Adding header
+@import './components/header';
