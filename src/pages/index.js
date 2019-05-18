@@ -7,9 +7,9 @@ import SEO from "../components/seo"
 // Adding Styles
 import './../scss/app.scss'
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ data }, props) => {
   const about = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title === 'About');
-  
+
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`, `portfolio`, `personal website`, `blog`]} />
@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => {
           <h3 className="main__author-subhead center">Hi there! I'm</h3>
           <h1 className="main__author-head center">{ data.site.siteMetadata.title }</h1>
           <p className="main__author-experct">{ about[0].node.excerpt }
-          <br/><Link to="#" className="main__content-link">read more...</Link></p>
+          <br/><Link to="/about" className="main__content-link">read more...</Link></p>
         </div>
       </div>
     </Layout>
