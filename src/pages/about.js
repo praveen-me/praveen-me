@@ -23,10 +23,13 @@ const About = ( { data } ) => {
             </h2>
             <p className="about__time"> { minutes } { minutes > 1 ? 'minutes' : 'minute'  }  read </p>
           </div>
-          <img src={ data.imageOne.childImageSharp.fluid.src } alt="" className="about__author-img"/>
+          <img src={ data.imageOne.childImageSharp.fluid.src } alt="Praveen Kumar Saini" className="about__author-img"/>
         </div>
-        <p className="about__content">
-        
+        <p className="about__content" dangerouslySetInnerHTML={
+          {
+            __html: about[0].node.html
+          }
+        }>
         </p>
       </div>    
       <Link to="/">Home</Link>
