@@ -1,4 +1,7 @@
 module.exports = [{
+      plugin: require('/home/praveen/Documents/praveen-me.github.io/node_modules/gatsby-remark-images/gatsby-browser.js'),
+      options: {"plugins":[],"maxWidth":590},
+    },{
       plugin: require('/home/praveen/Documents/praveen-me.github.io/node_modules/gatsby-mdx/gatsby-browser.js'),
       options: {"plugins":[]},
     },{
