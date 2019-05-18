@@ -1,10 +1,9 @@
 import { Link } from "gatsby";
-import PropTypes from "prop-types";
 import React from "react";
 
 import socialLinks from "../utils/social-links";
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header className="header" id="top">
     <a href="#top" className="header__topbar"></a>
     <div className="header__content-block">
@@ -16,21 +15,13 @@ const Header = ({ siteTitle }) => (
           socialLinks.map( ( link, i ) => (
             <div className="header__social-sec" key={ link.linkType }>
               <span> { link.linkType } </span> 
-              <a href={link.socialLink + link.username }> @{ link.username }</a>
+              <a href={link.socialLink + link.username } target="_blank"> @{ link.username }</a>
             </div>
           ) )
         }        
       </div>
     </div>
   </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
+);
 
 export default Header
