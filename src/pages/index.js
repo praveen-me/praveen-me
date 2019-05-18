@@ -7,35 +7,39 @@ import SEO from "../components/seo"
 // Adding Styles
 import './../scss/app.scss'
 
-const IndexPage = ({ data }) => (
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`, `portfolio`, `personal website`, `blog`]} />
-    <div className="main__content">
-      {/* Hero Section */}
-      <div className="main__sec">
-        <h3 className="main__author-subhead center">Hi there! I'm</h3>
-        <h1 className="main__author-head center">Praveen Kumar Saini</h1>
-        <p className="main__author-experct">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam. <Link to="#" className="main__content-link">read more...</Link></p>
+const IndexPage = ({ data }) => {
+  const about = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title === 'About');
+  
+  return (
+    <Layout>
+      <SEO title="Home" keywords={[`gatsby`, `application`, `react`, `portfolio`, `personal website`, `blog`]} />
+      <div className="main__content">
+        {/* Hero Section */}
+        <div className="main__sec">
+          <h3 className="main__author-subhead center">Hi there! I'm</h3>
+          <h1 className="main__author-head center">{ data.site.siteMetadata.title }</h1>
+          <p className="main__author-experct">{ about[0].node.excerpt }
+          <br/><Link to="#" className="main__content-link">read more...</Link></p>
+        </div>
       </div>
-    </div>
-  </Layout>
-)
+    </Layout>
+  )
+}
 
 export const query = graphql`
 query {
+  site {
+    siteMetadata {
+      title
+    }
+  }
   allMarkdownRemark {
     edges {
       node {
-        id
-        html
-        fields {
-          slug
-        }
-        frontmatter {
+        excerpt
+        frontmatter{
           title
-          date
         }
-        
       }
     }
   }

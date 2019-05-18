@@ -1,4 +1,7 @@
 module.exports = [{
+      plugin: require('/home/praveen/Documents/praveen-me.github.io/node_modules/gatsby-mdx/gatsby-browser.js'),
+      options: {"plugins":[]},
+    },{
       plugin: require('/home/praveen/Documents/praveen-me.github.io/node_modules/gatsby-plugin-typography/gatsby-browser.js'),
       options: {"plugins":[],"pathToConfigModule":"src/utils/typography"},
     },{
