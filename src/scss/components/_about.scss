@@ -1,0 +1,21 @@
+// About Style
+.about {
+  margin: 2rem auto;
+}
+
+.about__sec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about__head {
+  font-size: 2.15rem;
+  font-weight: bold;
+  color: #112739;
+}
+
+.about__author-img {
+  border-radius: 50%;
+  width: 150px;
+  justify-self: end;
+}
