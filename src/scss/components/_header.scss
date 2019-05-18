@@ -47,7 +47,7 @@
   text-align: center;
   display: flex;
   font-size: 16px;
-  justify-content: center
+  justify-content: center;
 }
 
 .header__social-sec {
@@ -57,5 +57,11 @@
   span {
     display: inline-block;
     margin-right: 0.2rem;
+  }
+  a {
+    border-bottom: 3px solid transparent;
+    &:hover {
+      border-bottom: 3px solid #112739;
+    }
   }
 }
