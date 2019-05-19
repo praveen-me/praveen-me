@@ -1,16 +1,20 @@
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
   position: relative;
   height: 100%;
   font-family: 'Hind Madurai', sans-serif;
-  background: #f1f1ff;
   color: #757575;
 }
 
-body.show-content {
+.home {
+  background: #f1f1ff;
+}
+
+.show-content {
   background: #fff;
 }
 

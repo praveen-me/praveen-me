@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <p className="footer__text center">
-      Made with ❤️ JavaScript and SASS with React and Gatsby 💻
+      Made with <span role="image">❤️</span> JavaScript and SASS with React and Gatsby <span role="image">💻</span>
       </p> 
     </footer>
   )

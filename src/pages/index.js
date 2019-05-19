@@ -3,17 +3,18 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import {  Location } from '@reach/router';
 
 // Adding Styles
 import './../scss/app.scss'
+import LayoutWrapper from "../components/layoutWrapper";
 
-const IndexPage = ({ data }, props) => {
-  document.body.classList.remove('show-content');
-  
+const IndexPage = ({ data }) => {
+
   const about = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title === 'About');
 
   return (
-    <Layout>
+    <LayoutWrapper>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`, `portfolio`, `personal website`, `blog`]} />
       <div className="main__content">
         {/* Hero Section */}
@@ -24,7 +25,7 @@ const IndexPage = ({ data }, props) => {
           <br/><Link to="/about" className="main__content-link">read more...</Link></p>
         </div>
       </div>
-    </Layout>
+    </LayoutWrapper>
   )
 }
 

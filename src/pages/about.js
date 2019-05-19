@@ -4,16 +4,16 @@ import { graphql} from 'gatsby';
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import LayoutWrapper from "../components/layoutWrapper";
 
 const About = ( { data } ) => {
-  document.body.classList.add('show-content');
   
   const about = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title === 'About');
   
   const minutes = Math.ceil( about[0].node.wordCount.words / 200 ) 
 
   return (
-    <Layout>
+    <LayoutWrapper>
     <SEO title="About" keywords={[`gatsby`, `application`, `react`, `portfolio`, `personal website`, `blog`]}/>
 
       {/* About Page */}
@@ -34,7 +34,7 @@ const About = ( { data } ) => {
         }>
         </p>
       </div> 
-    </Layout>
+    </LayoutWrapper>
   )
 }
 
