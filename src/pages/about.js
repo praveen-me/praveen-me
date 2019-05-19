@@ -6,6 +6,8 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 const About = ( { data } ) => {
+  document.body.classList.add('show-content');
+  
   const about = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title === 'About');
   
   const minutes = Math.ceil( about[0].node.wordCount.words / 200 ) 
@@ -25,14 +27,13 @@ const About = ( { data } ) => {
           </div>
           <img src={ data.imageOne.childImageSharp.fluid.src } alt="Praveen Kumar Saini" className="about__author-img"/>
         </div>
-        <p className="about__content" dangerouslySetInnerHTML={
+        <p className="about__content content" dangerouslySetInnerHTML={
           {
             __html: about[0].node.html
           }
         }>
         </p>
-      </div>    
-      <Link to="/">Home</Link>
+      </div> 
     </Layout>
   )
 }

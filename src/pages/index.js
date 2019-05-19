@@ -8,6 +8,8 @@ import SEO from "../components/seo"
 import './../scss/app.scss'
 
 const IndexPage = ({ data }, props) => {
+  document.body.classList.remove('show-content');
+  
   const about = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title === 'About');
 
   return (
