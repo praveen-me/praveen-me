@@ -5,20 +5,39 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types";
 import Header from "./header";
 import Footer from "./footer";
 
-const Layout = ({ children }) => {
+class Layout extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isHome: false
+    }
+  }
+  
+  // const [isHome, setIsHome] = useState(true);
+  
+  componentDidMount() {
+    this.setState({
+      isHome: this.props.location.pathname === '/' ? true : false
+    })  
+  }
+  
 
-  return (
-    <>
-      <Header/>
-      <main className="wrapper main">{children}</main>
-      <Footer/>
-    </>
-  )
+  render() {
+    const { children} = this.props;
+    const { isHome } = this.state;
+    return (
+      <div className={ isHome ? 'home' : 'show-content' }>
+        <Header/>
+        <main className="wrapper main">{children}</main>
+        <Footer/>
+      </div>
+    )
+  }
 }
 
 Layout.propTypes = {
