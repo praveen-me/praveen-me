@@ -18,14 +18,11 @@ class Layout extends React.PureComponent {
     }
   }
   
-  // const [isHome, setIsHome] = useState(true);
-  
   componentDidMount() {
     this.setState({
       isHome: this.props.location.pathname === '/' ? true : false
     })  
   }
-  
 
   render() {
     const { children} = this.props;
