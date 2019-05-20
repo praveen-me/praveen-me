@@ -1,0 +1,31 @@
+.posts {
+  margin: 3rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+}
+
+.posts__single {
+  border: 1px solid #ddd;
+  background: #fff;
+  background-image: none;
+  display: inline-block;
+  padding: 3rem;
+}
+
+.posts__date-and-time {
+  font-size: 16px;
+  font-weight: 300;
+  color: #757575;
+}
+
+.posts__title {
+  font-size: 2rem;
+  color: #112739;
+  font-weight: bolder;
+}
+
+.posts__excerpt {
+  color: #757581;
+  font-weight: normal;
+}
