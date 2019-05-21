@@ -1,17 +1,14 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-
-import Layout from "../components/layout"
+import { Link, graphql } from "gatsby";
 import SEO from "../components/seo"
-import {  Location } from '@reach/router';
-
 // Adding Styles
 import './../scss/app.scss'
 import LayoutWrapper from "../components/layoutWrapper";
 
 const IndexPage = ({ data }) => {
-
   const about = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title === 'About');
+
+  const allPosts = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title !== 'About');
 
   return (
     <LayoutWrapper>
@@ -23,6 +20,20 @@ const IndexPage = ({ data }) => {
           <h1 className="main__author-head center">{ data.site.siteMetadata.title }</h1>
           <p className="main__author-experct">{ about[0].node.excerpt }
           <br/><Link to="/about" className="main__content-link">read more...</Link></p>
+        </div>
+
+        {/* Post List Section */}
+        <div className="posts">
+
+          {
+            allPosts.map( post => (
+              <Link to={ post.node.fields.slug } className="posts__single" key={ post.node.fields.slug }>
+                <p className="posts__date-and-time">{ new Date(post.node.frontmatter.date).toDateString() } - 1 min read</p>
+                <h2 className="posts__title">{ post.node.frontmatter.title }</h2>
+                <p className="posts__excerpt">{ post.node.excerpt }</p>
+              </Link>
+            ) )
+          }
         </div>
       </div>
     </LayoutWrapper>
@@ -39,9 +50,13 @@ query {
   allMarkdownRemark {
     edges {
       node {
-        excerpt
+        fields {
+          slug
+        }
+        excerpt(pruneLength: 75)
         frontmatter{
           title
+          date
         }
       }
     }

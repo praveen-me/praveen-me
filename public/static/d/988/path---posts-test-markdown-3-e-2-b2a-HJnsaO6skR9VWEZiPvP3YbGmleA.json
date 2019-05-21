@@ -1,0 +1,1 @@
+{"errors":[{"message":"Cannot find module 'language-rust/package.json'","locations":[{"line":5,"column":5}],"path":["markdownRemark","html"]}],"data":{"markdownRemark":{"html":null,"frontmatter":{"title":"Test Markdown"}}},"pageContext":{"isCreatedByStatefulCreatePages":false,"slug":"/posts/test-markdown/"}}

@@ -6,7 +6,10 @@ import Layout from './layout';
 const LayoutWrapper = ( props ) => {
   return <Location>
     {
-      (locationProps) => <Layout {...locationProps} { ...props }>{ props.children }</Layout>
+      (locationProps) => {
+        console.log(locationProps);
+        return <Layout {...locationProps} { ...props }>{ props.children }</Layout>
+      }
     }
   </Location>
 }

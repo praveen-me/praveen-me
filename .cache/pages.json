@@ -15,6 +15,11 @@
         "path": "/404/"
     },
     {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "about-me-a3a",
+        "path": "/about-me/"
+    },
+    {
         "componentChunkName": "component---src-pages-about-js",
         "jsonName": "about-f34",
         "path": "/about/"
@@ -25,23 +30,18 @@
         "path": "/dev-404-page/"
     },
     {
-        "componentChunkName": "component---src-templates-blog-post-js",
-        "jsonName": "mardown-pages-about-85d",
-        "path": "/mardown-pages/about/"
-    },
-    {
         "componentChunkName": "component---src-pages-page-2-js",
         "jsonName": "page-2-fbc",
         "path": "/page-2/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
-        "jsonName": "test-2-8d0",
-        "path": "/test-2/"
+        "jsonName": "posts-test-2-14d",
+        "path": "/posts/test-2/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
-        "jsonName": "test-markdown-f6e",
-        "path": "/test-markdown/"
+        "jsonName": "posts-test-markdown-3e2",
+        "path": "/posts/test-markdown/"
     }
 ]
