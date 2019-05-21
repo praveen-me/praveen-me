@@ -1,15 +1,17 @@
 import React from 'react';
-import Layout from '../components/layout';
 import { graphql } from 'gatsby';
+import LayoutWrapper from '../components/layoutWrapper';
 
 export default ( { data } ) => {
   const post = data.markdownRemark;
   return (
-    <Layout>
-      {/* <div>Hello World Post</div> */}
-      <h1> { post.frontmatter.title }</h1>
-      <div dangerouslySetInnerHTML={ { __html: post.html } }></div>
-    </Layout>
+    <LayoutWrapper>
+      <div className="content post">
+      <h1 className="post__title center"> { post.frontmatter.title }</h1>
+      <div dangerouslySetInnerHTML={ { __html: post.html } } />
+      </div>
+
+    </LayoutWrapper>
   )
 }
 

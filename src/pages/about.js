@@ -2,13 +2,14 @@ import React from "react"
 import { Link } from "gatsby"
 import { graphql} from 'gatsby';
 
-import Layout from "../components/layout";
 import SEO from "../components/seo";
 import LayoutWrapper from "../components/layoutWrapper";
 
 const About = ( { data } ) => {
   
   const about = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title === 'About');
+
+  console.log(about)
   
   const minutes = Math.ceil( about[0].node.wordCount.words / 200 ) 
 
