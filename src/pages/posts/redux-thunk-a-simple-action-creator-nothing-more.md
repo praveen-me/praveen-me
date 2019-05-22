@@ -1,6 +1,6 @@
 ---
 title: "Redux Thunk: A Simple Action Creator Nothing More"
-date: "18-11-2018"
+date: "11-18-2018"
 ---
 
 

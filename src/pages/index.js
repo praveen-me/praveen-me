@@ -10,6 +10,8 @@ const IndexPage = ({ data }) => {
 
   const allPosts = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title !== 'About');
 
+  const minutes = (words) => Math.ceil( words / 200 );
+
   return (
     <LayoutWrapper>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`, `portfolio`, `personal website`, `blog`]} />
@@ -28,7 +30,8 @@ const IndexPage = ({ data }) => {
           {
             allPosts.map( post => (
               <Link to={ post.node.fields.slug } className="posts__single" key={ post.node.fields.slug }>
-                <p className="posts__date-and-time">{ new Date(post.node.frontmatter.date).toDateString() } - 1 min read</p>
+                { console.log() }
+                <p className="posts__date-and-time">{ new Date(post.node.frontmatter.date).toDateString() } - { minutes(post.node.wordCount.words) } min read</p>
                 <h2 className="posts__title">{ post.node.frontmatter.title }</h2>
                 <p className="posts__excerpt">{ post.node.excerpt }</p>
               </Link>
@@ -52,6 +55,10 @@ query {
       node {
         fields {
           slug
+        }
+        html
+        wordCount {
+          words
         }
         excerpt(pruneLength: 75)
         frontmatter{
