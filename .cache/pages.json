@@ -41,6 +41,11 @@
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "posts-javascript-classes-lets-know-behind-the-scenes-517",
+        "path": "/posts/javascript-classes-lets-know-behind-the-scenes/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
         "jsonName": "posts-redux-thunk-a-simple-action-creator-nothing-more-c61",
         "path": "/posts/redux-thunk-a-simple-action-creator-nothing-more/"
     },
