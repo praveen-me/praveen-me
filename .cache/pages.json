@@ -41,6 +41,11 @@
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "posts-redux-thunk-a-simple-action-creator-nothing-more-c61",
+        "path": "/posts/redux-thunk-a-simple-action-creator-nothing-more/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
         "jsonName": "posts-scope-local-global-and-lexical-071",
         "path": "/posts/scope-local-global-and-lexical/"
     }
