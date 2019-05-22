@@ -3,11 +3,13 @@ title: "JavaScript Classes: Let’s Know Behind the Scenes"
 date: "11-30-2018"
 ---
 
+![](https://cdn-images-1.medium.com/max/800/1*H-pLl9S63QJl49ad8Fa-tg.jpeg)
+
 So, as we know **JavaScript Classes** are just a way of working on our problem using the OOP paradigm that helps us to solve our problem in a very structured way. In this article, I am not going to tell you how to write a **JavaScript Classes** my main focus is just to implement in different approaches.
 In this article we are going to implement **JavaScript Classes** in three ways:-
-* **Using Factory functions**
-* **Using Constructor Function (Pseudo Class)**
-* **Using Classes**
+- **Using Factory functions**
+- **Using Constructor Function (Pseudo Class)**
+- **Using Classes**
 So, let’s start.
 
 ## Using Factories Functions
@@ -43,7 +45,7 @@ Now, let’s create a factory function that creates an object for us and return 
       obj.phy = p;
       obj.che = c;
       obj.math = m;
-      *return* obj;
+      return obj;
     }
 ```
 
@@ -61,9 +63,9 @@ Now it turns to make the class using the pseudo-class method. For that first, we
 
 ```js
     function Student (p, c, m) {
-      *this*.phy = p;
-      *this*.che = c;
-      *this*.math = m;
+      this.phy = p;
+      this.che = c;
+      this.math = m;
     }
 ```
 
@@ -72,15 +74,15 @@ Now we are putting some function in the **prototype** of the function. **[Protot
 
 ```js
     Student.prototype.percentage = function() {
-      let total =  *this*.phy + *this*.che + *this*.math;
+      let total =  this.phy + this.che + this.math;
       console.log((total / 3).toFixed(2))0
     }
 
     Student.prototype.result = function() {
-      let total =  *this*.phy + *this*.che + *this*.math;
-      *if*(total > 200) {
+      let total =  this.phy + this.che + this.math;
+      if(total > 200) {
         console.log('pass');
-      } *else* {
+      } else {
         console.log('fail')
       }
     }
@@ -103,21 +105,21 @@ For that, we just have first had to put **class** keyword in front Class name in
 ```js
     class Student {
       constructor(p, c, m) {
-        *this*.phy = p;
-        *this*.che = c;
-        *this*.math = m;
+        this.phy = p;
+        this.che = c;
+        this.math = m;
      }
 
      percentage() {
-       let total =  *this*.phy + *this*.che + *this*.math;
+       let total =  this.phy + this.che + this.math;
        console.log((total / 3).toFixed(2));
      }
 
      result() {
-       let total =  *this*.phy + *this*.che + *this*.math;
-       *if*(total > 200) {
+       let total =  this.phy + this.che + this.math;
+       if(total > 200) {
          console.log('pass');
-       } *else* {
+       } else {
          console.log('fail')
        }
      }
