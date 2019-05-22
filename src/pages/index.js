@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby";
 import SEO from "../components/seo"
+
 // Adding Styles
 import './../scss/app.scss'
 import LayoutWrapper from "../components/layoutWrapper";
@@ -26,12 +27,11 @@ const IndexPage = ({ data }) => {
 
         {/* Post List Section */}
         <div className="posts">
-
           {
             allPosts.map( post => (
               <Link to={ post.node.fields.slug } className="posts__single" key={ post.node.fields.slug }>
                 { console.log() }
-                <p className="posts__date-and-time">{ new Date(post.node.frontmatter.date).toDateString() } - { minutes(post.node.wordCount.words) } min read</p>
+                <p className="posts__date-and-time">{ new Date(post.node.frontmatter.date).toDateString() } - { minutes(post.node.wordCount.words) } { minutes(post.node.wordCount.words) > 1 ? 'mins' : 'min' } read</p>
                 <h2 className="posts__title">{ post.node.frontmatter.title }</h2>
                 <p className="posts__excerpt">{ post.node.excerpt }</p>
               </Link>
