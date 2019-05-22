@@ -18,12 +18,28 @@ There are two types of scopes:-
 
 Global Scope is a term used when a variable is declared outside any of the functions i.e the variables should be declared globally.
 
-<script src="https://gist.github.com/praveen-me/878223adafee1b3177e641db6504c6c1.js"></script>
+```js
+var a = 'global';               //I am a global scope
+function iAmLocal() {           //I am a global scope
+  console.log(a) // 'global'  
+}                               //I am a global scope
+```
+
 So, If you look at the above function there’s variable **a** is declared globally and it can be accessed inside the function. Here, **iAmLocal()** function created its own scope. But here’s the variable is declared in global scope. So, the point is that if we declared a variable globally it can be accessed inside a function.
 
 Let's take another example:-
 
-<iframe src="https://medium.com/media/8ed4475739d1d3597c8e0c0a2225a1f3" frameborder=0></iframe>
+```js
+var a = 'global'; 
+
+function iAmLocal() {
+  a = 'is I am local';
+}
+
+iAmLocal();
+
+a;   //Think and let's give it a moment ??
+```
 
 So, the value of the variable should be changed or not. Let’s know it by executing it.
 
@@ -35,7 +51,16 @@ It changed because the variable **a** is accessible inside the function because 
 
 When we declare a function it creates its own scope. So, whenever a function is declared it creates its local scope which is limited to that function. So, it means that if you are declared a variable inside a function it’s limited to it. So, Let’s understand it by a code example:-
 
-<iframe src="https://medium.com/media/a7b4663e506945cfc03da7d2ff7a40a3" frameborder=0></iframe>
+```js
+var a = 'global';
+
+function iAMLocal() {
+  var b = 'local';
+}
+
+a; //'global'
+b; //??
+```
 
 Let’s access the variable outside the function.
 
@@ -45,7 +70,23 @@ OOPS!! It says an error because now the engine looks for the variable **b** glob
 
 Let’s take another example:-
 
-<iframe src="https://medium.com/media/936333ada3e28a4901f4d4fec3fc43b8" frameborder=0></iframe>
+```js
+function sum() {
+  var a = 5;
+  var result = 0;
+
+  // Declaring second function
+  function secondNumber() {
+    var b = 10;
+    return a+b;
+  }
+
+  //calling secondNumber() and storing it in a variable
+  var result = secondNumber();
+
+  return result;
+}
+```
 
 So, can we access **a** inside the **secondNumber()**. Let’s try it by running it. If we get **15**, that means we can.
 
@@ -61,7 +102,20 @@ Because when **sum()** is declared it creates its own scope and the variables th
 
 So, Lexical Scope is the same as the nested local scopes but there be little bit difference between them. In this, if the current scope doesn’t find the value then it moves outside to that scope and tries to find the value there. This process continues until it finds the value. Let’s do it by an example:-
 
-<iframe src="https://medium.com/media/6f3026eab22c70920af2f4934a53ee8a" frameborder=0></iframe>
+```js
+var num1 = 5; //globally
+
+function add() {
+  var num2 = 8;  //locally
+
+  return function() {      //returning function
+    return num1 + num2;    //returning function 
+  }                        //returning function
+}
+
+var addIt = add();
+addIt(); //?
+```
 
 So, In the above code sample, I declared **num1** globally because it’s outside all the loops. Now, when we declared the **add()** function it creates it’s own scope. That’s why **num2** is declared locally so it available in the scope of the **add()** function. So, let’s think and look the code carefully that it gives us the **13** or not. 
  Let’s execute it:-
@@ -76,7 +130,13 @@ So, In the above code sample, I declared **num1** globally because it’s outsid
 
 So, let and const are new members in the family of variables declarations in JavaScript. So, they help us to create a scope and helps the variable to not get hoisted. Let’s take an example:-
 
-<iframe src="https://medium.com/media/e9e19637948aac984a96779d2b73a0a1" frameborder=0></iframe>
+```js
+or(var i = 1; i <= 10; i++) {
+  console.log(i);
+}
+
+i;  //Can I access it out side??.
+```
 
 Let’s check out it:-
 
@@ -85,7 +145,13 @@ Let’s check out it:-
 So, we can access the variable **i** outside the loop because we know that only function can create their own scope. So, **for loop** declared in the global scope. That’s why in the last when the loop got executed we got the increased value of **i**.
 Let’s do it again but put **let** instead of **var** :-
 
-<iframe src="https://medium.com/media/84390599e9e516c1717a0cb685d7bbe6" frameborder=0></iframe>
+```js
+for(let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+
+i; //Can I access i now??
+```
 
 ![](https://cdn-images-1.medium.com/max/2000/1*Xr4qxHLAG4TfWen_V3idkw.png)
 
@@ -94,6 +160,5 @@ Ya, it said a **error** saying ***i** is not defined* because **let** creates a 
 
 Thanks for reading…
 
-Follow me on [**Twitter](https://twitter.com/am_pra_veen)** and check all these Gists on [**GitHub](https://gist.github.com/praveen-me)**.
+Follow me on **[Twitter](https://twitter.com/am_pra_veen)** and check all these Gists on **[GitHub](https://gist.github.com/praveen-me)**.
 
-*Originally published at [https://praveen-me.github.io/blog/javascript-scopes](https://praveen-me.github.io/blog/javascript-scopes) on September 6, 2018.*
