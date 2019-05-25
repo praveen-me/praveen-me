@@ -31,7 +31,7 @@ const IndexPage = ({ data }) => {
               date={ frontmatter.date }
               words={ wordCount.words }
               title={ frontmatter.title }
-              exceprt={ excerpt }
+              excerpt={ excerpt }
               key={ fields.slug }
               />
             } )
@@ -44,7 +44,7 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
 query {
-  allMarkdownRemark {
+  allMarkdownRemark(sort : { order: DESC, fields: [frontmatter___date] }) {
     edges {
       node {
         fields {
