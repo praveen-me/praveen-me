@@ -5,7 +5,7 @@ import socialLinks from "../utils/social-links";
 
 const Header = () => (
   <header className="header" id="top">
-    <a href="#top" className="header__topbar"></a>
+    <a href="#top" className="header__topbar" >""</a>
     <div className="header__content-block">
       <div className="header__logo-sec">
         <Link to="/" className="header__logo">JS</Link>
@@ -15,7 +15,7 @@ const Header = () => (
           socialLinks.map( ( link, i ) => (
             <div className="header__social-sec" key={ link.linkType }>
               <span> { link.linkType } </span> 
-              <a href={link.socialLink + link.username } target="_blank"> @{ link.username }</a>
+              <a href={link.socialLink + link.username } rel="noopener noreferrer" target="_blank"> @{ link.username }</a>
             </div>
           ) )
         }        

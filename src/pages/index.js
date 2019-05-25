@@ -1,11 +1,10 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import SEO from "../components/seo";
 
 // Adding Styles
 import './../scss/app.scss'
 import LayoutWrapper from "../components/layoutWrapper";
-import { minutes } from "../utils/helper-functions";
 import HeroSection from "../components/home/HeroSection";
 import PostBlock from "../components/home/PostBlock";
 
@@ -24,17 +23,17 @@ const IndexPage = ({ data }) => {
         <div className="posts">
           {
             allPosts.map( post => {
-              let time = minutes(post.node.wordCount.words);
-              return <>
 
-                <PostBlock 
-                slug={ post.node.fields.slug } 
-                date={ post.node.frontmatter.date }
-                words={ post.node.wordCount.words }
-                title={ post.node.frontmatter.title }
-                exceprt={ post.node.excerpt }/>
-
-              </>;
+              const { fields, wordCount, excerpt, frontmatter } = post.node;
+              
+              return  <PostBlock 
+              slug={ fields.slug } 
+              date={ frontmatter.date }
+              words={ wordCount.words }
+              title={ frontmatter.title }
+              exceprt={ excerpt }
+              key={ fields.slug }
+              />
             } )
           }
         </div>
