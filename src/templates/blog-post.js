@@ -7,7 +7,8 @@ export default ( { data } ) => {
   return (
     <LayoutWrapper>
       <div className="content post">
-      <h1 className="post__title center"> { post.frontmatter.title }</h1>
+      <h2 className="post__title center"> { post.frontmatter.title }</h2>
+      <p className="post__info">  </p>
       <div dangerouslySetInnerHTML={ { __html: post.html } } />
       </div>
 

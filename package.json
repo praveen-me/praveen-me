@@ -17,7 +17,6 @@
     "gatsby-plugin-sass": "^2.0.11",
     "gatsby-plugin-sharp": "^2.0.35",
     "gatsby-plugin-styled-components": "^3.0.7",
-    "gatsby-plugin-typography": "^2.2.13",
     "gatsby-remark-copy-linked-files": "^2.0.12",
     "gatsby-remark-highlights": "^1.3.4",
     "gatsby-remark-images": "^3.0.11",
@@ -32,9 +31,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.19",
-    "styled-components": "^4.2.0",
-    "typography": "^0.16.19",
-    "typography-theme-fairy-gates": "^0.16.19"
+    "styled-components": "^4.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.5.1",
