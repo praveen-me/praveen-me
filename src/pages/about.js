@@ -1,5 +1,4 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
 import { graphql} from 'gatsby';
 
 import SEO from "../components/seo";

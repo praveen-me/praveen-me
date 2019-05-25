@@ -38,8 +38,12 @@
   font-weight: bold;
   color: #fff;
   position: absolute;
-  bottom: -10%;
   right: 10%;
+  display: grid;
+  height: 100%;
+  align-content: end;
+  justify-content: end;
+  width: 100%;
 }
 
 .header__social-pack {
