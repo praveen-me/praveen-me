@@ -22,7 +22,7 @@ class Layout extends React.PureComponent {
   
   componentDidMount() {
     this.setState({
-      isHome: this.props.location.pathname === '/' ? true : false
+      isHome: this.props.location.pathname === '/' || this.props.location.pathname.match(/page/, 'i') ? true : false
     })  
   }
 

@@ -6,10 +6,6 @@ import LayoutWrapper from "../components/layoutWrapper";
 import { minutes } from "../utils/helper-functions";
 
 const About = ( { data } ) => {
-  
-  const about = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title === 'About');
-
-  const time = minutes(about[0].node.wordCount.words);
 
   return (
     <LayoutWrapper>
@@ -22,15 +18,40 @@ const About = ( { data } ) => {
             <h2 className="about__head">
               About Me
             </h2>
-            <p className="about__time"> { time } { time > 1 ? 'minutes' : 'minute'  }  read </p>
+            <p className="about__time"> 2 minutes read </p>
           </div>
           <img src={ data.imageOne.childImageSharp.fluid.src } alt="Praveen Kumar Saini" className="about__author-img"/>
         </div>
-        <p className="about__content content" dangerouslySetInnerHTML={
-          {
-            __html: about[0].node.html
-          }
-        }>
+        <p className="about__content content">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
+
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
+
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
+
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
+
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
+
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
+
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
+
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
+
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
+
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
+
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
+
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
+
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
+
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
         </p>
       </div> 
     </LayoutWrapper>
@@ -45,19 +66,6 @@ export const query = graphql`
           src
           originalImg
           originalName
-        }
-      }
-    }
-    allMarkdownRemark {
-      edges {
-        node {
-          html
-          wordCount {
-            words
-          }
-          frontmatter{
-            title
-          }
         }
       }
     }
