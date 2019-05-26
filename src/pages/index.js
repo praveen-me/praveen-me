@@ -6,14 +6,10 @@ import SEO from "../components/seo";
 import './../scss/app.scss'
 import LayoutWrapper from "../components/layoutWrapper";
 import HeroSection from "../components/home/HeroSection";
-import PostBlock from "../components/home/PostBlock";
 import Pagination from "../components/pagination";
 import PostList from "../components/PostList";
 
 const IndexPage = ({ data }) => {
-
-  const firstPost = data.allMarkdownRemark.edges[0].node;
-  const leftPosts = data.allMarkdownRemark.edges.slice(1);
 
   return (
     <LayoutWrapper>
@@ -24,6 +20,8 @@ const IndexPage = ({ data }) => {
 
         {/* Post List Section */}
         <PostList posts={ data.allMarkdownRemark }/>
+
+        {/* Pagination */}
         <Pagination />
       </div>
     </LayoutWrapper>
@@ -45,7 +43,7 @@ query {
         wordCount {
           words
         }
-        excerpt(pruneLength: 75)
+        excerpt(pruneLength: 150)
         frontmatter{
           title
           date
