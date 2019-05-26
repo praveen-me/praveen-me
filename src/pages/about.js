@@ -8,8 +8,7 @@ import { minutes } from "../utils/helper-functions";
 const About = ( { data } ) => {
   
   const about = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title === 'About');
-  
-  // const minutes = minu 
+
   const time = minutes(about[0].node.wordCount.words);
 
   return (
