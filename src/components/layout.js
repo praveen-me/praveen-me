@@ -10,6 +10,8 @@ import PropTypes from "prop-types";
 import Header from "./header";
 import Footer from "./footer";
 
+// import './../scss/app.scss';
+
 class Layout extends React.PureComponent {
   constructor(props) {
     super(props);
