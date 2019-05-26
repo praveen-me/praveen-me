@@ -2,8 +2,7 @@ import React from "react";
 import { Link, graphql, useStaticQuery } from "gatsby";
 
 const HeroSection = ( ) => {
-  
-  const { site, allMarkdownRemark } = useStaticQuery(
+  const { site } = useStaticQuery(
     graphql`
     query {
       site {
@@ -14,7 +13,6 @@ const HeroSection = ( ) => {
     }
     `
   );
-
   
   return(
     <div className="main__sec">

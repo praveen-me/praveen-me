@@ -2,7 +2,6 @@ import React from 'react';
 import {  Location } from '@reach/router';
 import Layout from './layout';
 
-
 const LayoutWrapper = ( props ) => {
   return <Location>
     {

@@ -48,10 +48,6 @@ exports.createPages = ( { graphql, actions } ) => {
       const postsPerPage = 5;  
       const numPages = Math.ceil( allPosts.length / postsPerPage );
 
-      for ( const post of allPosts ) {
-        console.log( post.node.frontmatter.title );
-      }
-
       Array.from({ length: numPages }).forEach((_, i) => {        createPage({
           path: i === 0 ? '/page' : `/page/${ i + 1 }`,
           component: path.resolve('./src/templates/blog-list.js'),
