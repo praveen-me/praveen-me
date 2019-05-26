@@ -74,8 +74,6 @@ exports.createPages = ( { graphql, actions } ) => {
             slug
           }
         })
-      } )
-
-      
+      } )      
     });
 }

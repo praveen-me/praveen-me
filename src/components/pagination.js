@@ -30,17 +30,15 @@ const Pagination = () => {
   }
 
   return (
-    <div className="pagination">
+    <div className="pagination center">
     {
-      pages.map((page, i) => (
-        <Link href={ page === 1 ? '/' : `/page/${ i + 1 }` } className="page">{ i + 1 }</Link>
+      pages.map(( page, i ) => (
+        <Link to={ page === 1 ? '/' : `/page/${ i + 1 }` } className="pagination__link" key={ page }>{ i + 1 }</Link>
       ) )
     }
     </div>
   )
   
 };
-
-
 
 export default Pagination;
