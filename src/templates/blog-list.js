@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import LayoutWrapper from '../components/layoutWrapper';
 import Pagination from '../components/pagination';
+import PostBlock from '../components/home/PostBlock';
 
 const BlogList = ( { data } ) => {
   const posts = data.allMarkdownRemark.edges;
@@ -9,7 +10,17 @@ const BlogList = ( { data } ) => {
   return(
     <LayoutWrapper>
       {
-        posts.map(({node}) => <h2>{node.frontmatter.title}</h2> )
+        posts.map(({ node }) => {
+          const { fields, wordCount, excerpt, frontmatter } = node;
+          return <PostBlock 
+          slug={ fields.slug } 
+          date={ frontmatter.date }
+          words={ wordCount.words }
+          title={ frontmatter.title }
+          excerpt={ excerpt }
+          key={ fields.slug }
+          />
+        } )
       } 
       <Pagination />
     </LayoutWrapper>
@@ -28,8 +39,14 @@ export const blogListQuery = graphql`
           fields {
             slug
           }
-          frontmatter {
+          html
+          wordCount {
+            words
+          }
+          excerpt(pruneLength: 75)
+          frontmatter{
             title
+            date
           }
         }
       }
