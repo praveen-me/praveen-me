@@ -7,10 +7,13 @@ import './../scss/app.scss'
 import LayoutWrapper from "../components/layoutWrapper";
 import HeroSection from "../components/home/HeroSection";
 import PostBlock from "../components/home/PostBlock";
+import Pagination from "../components/pagination";
+import PostList from "../components/PostList";
 
 const IndexPage = ({ data }) => {
 
-  const allPosts = data.allMarkdownRemark.edges.filter(edge => edge.node.frontmatter.title !== 'About');
+  const firstPost = data.allMarkdownRemark.edges[0].node;
+  const leftPosts = data.allMarkdownRemark.edges.slice(1);
 
   return (
     <LayoutWrapper>
@@ -20,23 +23,8 @@ const IndexPage = ({ data }) => {
         <HeroSection />
 
         {/* Post List Section */}
-        <div className="posts">
-          {
-            allPosts.map( post => {
-
-              const { fields, wordCount, excerpt, frontmatter } = post.node;
-              
-              return  <PostBlock 
-              slug={ fields.slug } 
-              date={ frontmatter.date }
-              words={ wordCount.words }
-              title={ frontmatter.title }
-              excerpt={ excerpt }
-              key={ fields.slug }
-              />
-            } )
-          }
-        </div>
+        <PostList posts={ data.allMarkdownRemark }/>
+        <Pagination />
       </div>
     </LayoutWrapper>
   )

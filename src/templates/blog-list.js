@@ -3,25 +3,12 @@ import { Link, graphql } from 'gatsby';
 import LayoutWrapper from '../components/layoutWrapper';
 import Pagination from '../components/pagination';
 import PostBlock from '../components/home/PostBlock';
+import PostList from '../components/PostList';
 
 const BlogList = ( { data } ) => {
-  const posts = data.allMarkdownRemark.edges;
-  
   return(
     <LayoutWrapper>
-      {
-        posts.map(({ node }) => {
-          const { fields, wordCount, excerpt, frontmatter } = node;
-          return <PostBlock 
-          slug={ fields.slug } 
-          date={ frontmatter.date }
-          words={ wordCount.words }
-          title={ frontmatter.title }
-          excerpt={ excerpt }
-          key={ fields.slug }
-          />
-        } )
-      } 
+      <PostList posts={ data.allMarkdownRemark }/>
       <Pagination />
     </LayoutWrapper>
   )
