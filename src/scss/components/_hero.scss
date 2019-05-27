@@ -22,3 +22,25 @@
 .main__content-link:hover {
   color: rgb(2, 131, 86);
 }
+
+// for mobile and tablet
+@media screen and (max-width: 420px) {
+  .header__social-pack {
+    flex-direction: column;
+    align-content: end;
+    margin-top: 15px;
+  }
+
+  .header__social-sec {
+    justify-content: flex-end;
+  }
+
+  .main__author-head {
+    font-size: 35px;
+  }
+
+  .main__author-experct {
+    padding: 1rem;
+  }
+  
+}

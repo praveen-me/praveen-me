@@ -3,7 +3,7 @@ import { graphql} from 'gatsby';
 
 import SEO from "../components/seo";
 import LayoutWrapper from "../components/layoutWrapper";
-import { minutes } from "../utils/helper-functions";
+// import { minutes } from "../utils/helper-functions";
 
 const About = ( { data } ) => {
 
