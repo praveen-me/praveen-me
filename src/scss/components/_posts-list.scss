@@ -36,3 +36,14 @@
   color: #757581;
   font-weight: normal;
 }
+
+// Mobile View
+@media screen and (max-width: 420px) {
+  .posts {
+    grid-template-columns: 1fr;
+  }
+
+  .posts__single {
+    margin: 0 1rem;
+  } 
+}
