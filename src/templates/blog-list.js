@@ -17,7 +17,7 @@ const BlogList = ( { data } ) => {
 export const blogListQuery = graphql`
 query blogListQuery($skip: Int!, $limit: Int!) {
   allMarkdownRemark(
-    sort: { fields: [frontmatter___date], order: DESC }
+    sort: { fields: [frontmatter___date], order: ASC }
     limit: $limit
     skip: $skip
   ) {
