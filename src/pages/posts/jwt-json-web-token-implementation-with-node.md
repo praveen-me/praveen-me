@@ -1,6 +1,6 @@
 ---
 title: "JWT(JSON Web Token) : Implementation with Node"
-date: "1-4-2019"
+date: "1-15-2019"
 ---
 
 JSON Web Token is an open, industry-standard RCF 7519 method for authorizing transaction or requests between two parties. Basically, JWT used for the authorization purpose. We can authorize through session, cookies and third-party authorization.
