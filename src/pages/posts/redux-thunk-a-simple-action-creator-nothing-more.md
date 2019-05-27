@@ -34,7 +34,7 @@ Now you got the redux thunk. Now you have to import **applyMiddlware, **and** co
 Now you have that. So, go to that file where you created your store and pass **compose** as the second parameter besides the **rootReducer** and inside that call **applyMiddlware** and pass **thunk** inside it.
 
 ```js
-    const store = createStore(rootReducer,   compose(applyMiddleware(thunk)));
+    const store = createStore(rootReducer, compose(applyMiddleware(thunk)));
 ```
 
 So, now you just add thunk to your project and you can create your own **thunk** now. I am here making a simple thunk that helps you to make just a better understanding of **thunk**.
