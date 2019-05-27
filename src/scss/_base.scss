@@ -71,8 +71,12 @@ img {
 }
 
 .content {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 20px;
+  color: #5d5c5c;
+  a {
+    color: #027bad;
+  }
 }
 
 .main {

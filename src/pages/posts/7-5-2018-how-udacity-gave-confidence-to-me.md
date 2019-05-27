@@ -20,7 +20,7 @@ I thinking some and write my repo and in the late January I submit the form. I f
 
 ### That day came When I got my most beloved mail till now.
 
-They said that the result got out on* Feb 8* and recipients got email about that But out on the *Feb 7* and It said that your application got accepted for 
+They said that the result got out on *Feb 8* and recipients got email about that But out on the *Feb 7* and It said that your application got accepted for 
 Front-End Track and the classes start from *Feb 14*. It’s just like that I got the chance to prove myself.
 
 ![That Best Mail I got](https://cdn-images-1.medium.com/max/2000/1*VJ2NqVfjNExtzypPX9gceQ.png)*That Best Mail I got*
@@ -45,9 +45,9 @@ It’s just like a medicine dose to me like You have to take it after wake up in
 
 And, After some days **Akshit Jain Sir** made announcement that anyone who wants to be a moderators just fill out a form. Without wasting the time I applied for moderator.
 
-And After some days I got a message form **Akshit Jain Sir ** to be a moderator of *#live_help_official*(It’s the channel where a live help session is conducted twice a week). It also just like a appreciation for me.
+And After some days I got a message form **Akshit Jain Sir** to be a moderator of *#live_help_official*(It’s the channel where a live help session is conducted twice a week). It also just like a appreciation for me.
 
-![The post after end by** Iip Sir**.](https://cdn-images-1.medium.com/max/2000/1*5PB_tkI7cSUbaylBF5FVBQ.png)*The post after end by** Iip Sir**.*
+![The post after end by **Iip Sir**.](https://cdn-images-1.medium.com/max/2000/1*5PB_tkI7cSUbaylBF5FVBQ.png)*The post after end by **Iip Sir**.*
 
 And Now, my work start because as a moderators to help 
 *Iip Permana Sir([@iip](http://twitter.com/iip).udacity)* to take sessions. And It’s just like to work with a expert and help him. And after some time *Iip Permana Sir([@iip](http://twitter.com/iip).udacity) *mentions my name in his good bye post before the session got over. It’s also kind of appreciation to me.
@@ -56,13 +56,13 @@ And Now, my work start because as a moderators to help
 
 ![Mail got for Google I/O.](https://cdn-images-1.medium.com/max/2000/1*QLa0bIRpglEVVZ8kFzUhTg.png)*Mail got for Google I/O.*
 
-Now, In at March 23 [****Akshit Jain  Sir*** made a another announcement in that He said that we got some surprise email. 
+Now, In at March 23 **Akshit Jain  Sir** made a another announcement in that He said that we got some surprise email. 
 I check my mail without wasting the time. And a mail came from **Udacity India**. The mail said that win a chance for Google I/O and in that they told that for this you have to complete your challenge course by 80% percent.
 
 At that time I completed 60% and I looked at the date there are 5 days to me and now I try to complete 80% by 28 May. And I complete and filled the form.
 Now, I eagerly wait for the mail and at April 2 I got the mail from [****Akshit Jain  Sir*** in that He said **“You might need a chair somewhere near you so that you can sit and see the news I have got for you in this email.”** and **“Congratulations! You have been selected as one of the waitlist participants for the trip to Google #IO18 on behalf of Google and Udacity.”**.
 
-![That mail I got from** Akshit Sir **on the behalf of Google I/O](https://cdn-images-1.medium.com/max/2094/1*7hsfXmpbvVovGtd6bQWc-Q.png)*That mail I got from** Akshit Sir **on the behalf of Google I/O*
+![That mail I got from** Akshit Sir **on the behalf of Google I/O](https://cdn-images-1.medium.com/max/2094/1*7hsfXmpbvVovGtd6bQWc-Q.png)*That mail I got from* *Akshit Sir** on the behalf of Google I/O*
 
 It’s just like a daydream to me but there’s a problem in this **I am not 18 yet and there’s only 2 months left to me for completing 18**. So, I told [****Akshit Jain  Sir*** about that But according to the terms of the contest I am have to be 18.
 
@@ -83,6 +83,6 @@ I don’t know how can they do that 😜. That’s the reason behind I got addic
 
 ### At last, Covert **HOPE INTO OPPORTUNITY**
 
-As I mentioned in this title. Convert your *Hope* in *Opportunity* because first you have some hope for doing better then it is in you hand to make a opportunity for you or not. *Opportunity *don’t came to you directly first it gives you some hope.
+As I mentioned in this title. Convert your *Hope* in *Opportunity* because first you have some hope for doing better then it is in you hand to make a opportunity for you or not. *Opportunity* don’t came to you directly first it gives you some hope.
 
 **Thanks all of you that you guys gave some time to look at this. 😃**
