@@ -11,3 +11,9 @@
   border: 1px solid #ddd;
   padding: 8px 14px;
 }
+
+@media screen and (max-width: 420px){
+  .pagination {
+    padding-bottom: 4rem;
+  }
+}

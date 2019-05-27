@@ -3,3 +3,9 @@
   font-size: 2.5rem;
   color: #112739;
 }
+
+@media screen and (max-width : 420px) {
+  .post__title {
+    font-size: 30px 
+  }
+}

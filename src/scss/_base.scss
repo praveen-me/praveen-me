@@ -86,4 +86,12 @@ img {
 
 pre {
   font-size: 16px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 420px) {
+  .content {
+    margin: 0 1.5rem;
+    font-size: 18px;
+  }
 }
