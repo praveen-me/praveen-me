@@ -6,7 +6,7 @@ const PostList = ({ posts }) => {
   const leftPosts = posts.edges.slice(1);
 
   return (
-    <>
+    <div class="posts__wrapper">
       <PostBlock 
       slug={ firstPost.fields.slug } 
       date={ firstPost.frontmatter.date }
@@ -33,7 +33,7 @@ const PostList = ({ posts }) => {
           } )
         }
       </div>
-    </>
+    </div>
   )
 };
 
