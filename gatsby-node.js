@@ -13,6 +13,7 @@ exports.onCreateNode = ( { node, getNode, actions } ) => {
   }
 }
 
+//  GraphQL Node API that creates the pages dynamic pages that takes data.
 exports.createPages = ( { graphql, actions } ) => {
   const { createPage } = actions;
   
