@@ -2,7 +2,7 @@
 title: "Do Static Routing with Node"
 date: "12-03-2018"
 ---
-
+![](https://cdn-images-1.medium.com/max/800/1*2EeBPk5GJynWPjD1AuuPgw.jpeg)
 
 So, first of all, why am I writing this because of when I started **Node** couple of days back, I got just frustrated with searching about how can I do static routing using Node but I can’t find anything good and I just go through every question of **Stack Overflow** but I can’t find anything good and everyone is talking about **Express** in every question it doesn’t matter whether the guy that asks the question only about in **Node**. 
 So, first of all, let’s talk about static routing.

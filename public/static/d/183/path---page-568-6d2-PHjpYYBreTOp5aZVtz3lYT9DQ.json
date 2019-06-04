@@ -1,1 +1,0 @@
-{"errors":[{"message":"Variable \"$limit\" is never used in operation \"blogListQuery\".","locations":[{"line":3,"column":3}]}],"pageContext":{"isCreatedByStatefulCreatePages":false,"limit":4,"skip":4,"numPages":2,"currentPage":1}}
