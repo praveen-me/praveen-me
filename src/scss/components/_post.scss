@@ -1,3 +1,12 @@
+.post__info {
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 16px;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .post__title {
   font-weight: bold;
   font-size: 2.5rem;
@@ -6,6 +15,11 @@
 
 @media screen and (max-width : 420px) {
   .post__title {
-    font-size: 30px 
+    font-size: 30px;
   }
+
+  .post__info {
+    display: block;
+  }
+  
 }

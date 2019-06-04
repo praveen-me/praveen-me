@@ -62,7 +62,7 @@ function Metatags(props) {
         { name: 'robots', content: 'index, follow' },
 
         { name: 'twitter:creator', content: '@am_pra_veen' },
-        { property: 'og:site_name', content: 'yoursitename' }
+        { property: 'og:site_name', content: props.url }
       ]}
   >
       <html lang="en" />
