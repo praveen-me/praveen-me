@@ -3,6 +3,8 @@ title: "Scope: Local, Global and Lexical"
 date: "6-9-2018"
 ---
 
+![](https://cdn-images-1.medium.com/max/800/0*b92ypc_3zspCRuha.png)
+
 **A scope** is like a limited area. Scopes are the essential part of every programming language. They are behaving like a limited space for a declaration i.e where every variable is declared and what part of the program that variable can be accessed.
 
 As [MDN](https://developer.mozilla.org/en-US/docs/Glossary/Scope) Says — **The context in which values and expressions are “visible,” or can be referenced.**

@@ -3,7 +3,6 @@ import { graphql } from 'gatsby';
 import {  Location } from '@reach/router';
 
 import LayoutWrapper from '../components/layoutWrapper';
-// import SEO from '../components/seo';
 import Metatags from '../components/MetaTags';
 import { minutes } from '../utils/helper-functions';
 
@@ -15,7 +14,6 @@ export default ( { data } ) => {
   
   return (
     <LayoutWrapper>
-      {/* <SEO title={ post.frontmatter.title }> */}
       <Location>
       {
         ( locationProps ) => (

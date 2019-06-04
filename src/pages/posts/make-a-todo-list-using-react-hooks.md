@@ -3,6 +3,8 @@ title: "Make a Todo List Using React Hooks!!"
 date: "1-13-2019"
 ---
 
+![](https://cdn-images-1.medium.com/max/800/1*yCfHA67G2vPV7mmgzYpIgg.png)
+
 **React Hooks** are upcoming features in the React family and the interesting part of React Hooks are that we can use state in **functional components**.
 So, no more class components it doesn’t mean the support for class components is going to be stopped there. **Class components** are still there.
 But React Hooks are currently in the alpha version of **React** i.e **v16.8.0-alpha.0**. But we can use them through the alpha version.
