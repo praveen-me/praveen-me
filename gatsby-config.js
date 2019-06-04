@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Praveen Kumar Saini`,
     description: `Nerd/ JavaScript Lover/ React Developer`,
-    author: `@am_pra_veen`,
+    author: `am_pra_veen`,
     siteUrl: `https://praveen-me.now.sh`
   },
   plugins: [

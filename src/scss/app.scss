@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Hind+Madurai:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900&display=swap');
 
+// Add Font Awesome
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
 // Adding normalize
 @import './normalize';
 
@@ -28,3 +31,6 @@
 
 // Adding Pagination
 @import './components/pagination';
+
+// Added Share Btn for Blog
+@import './components/share';
