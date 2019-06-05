@@ -22,23 +22,15 @@ const About = ( { data } ) => {
           <img src={ data.imageOne.childImageSharp.fluid.src } alt="Praveen Kumar Saini" className="about__author-img"/>
         </div>
         <p className="about__content content">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
+          <p>I am a life long learner and currently working as a React Developer at <a href="https://rtcamp.com">rtCamp</a> . Most of the time I totally evolved in JavaScript stuff like React, Redux, Node, Express, etc.</p> 
 
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
+          <p>As we know the web is continuously changing so I always try to be updated and always be evolved around the new technologies and always have my keen eye on them for making something good out of them.</p> 
 
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
+          <p>I am a college dropout and also Google Udacity Scholar and got a Front End Nanodegree.</p> 
 
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
-
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
-
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
-
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
-
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.</p> 
-        </p>
+          <p>In this blog, I like to write about JavaScript stuff i.e what I explored and find interesting to write about.</p> 
+          <p>In my free time, i.e when I am not coding I like to sleep😬, read philosophies, watch documentaries and Netflix.</p> 
+         </p>
       </div> 
     </LayoutWrapper>
   )

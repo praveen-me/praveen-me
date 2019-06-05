@@ -101,12 +101,14 @@ pre {
   .content {
     padding: 0 2rem;
     font-size: 18px;
+    padding-bottom: 2rem;
   }
 }
 
 @media screen and (min-width: 421px) and (max-width: 768px) {
   .content {
     padding: 0 2rem;
+    padding-bottom: 2rem;
     font-size: 18px;
   }
 }

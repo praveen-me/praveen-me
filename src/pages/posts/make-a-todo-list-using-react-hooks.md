@@ -20,8 +20,8 @@ Now, let’s move into our App.js and make the App component **functional**. So,
 
 ![Todo form for adding todo](https://cdn-images-1.medium.com/max/3112/1*gjDdZHOgAXZ_TPoK-PJ_zg.png)*Todo form for adding todo*
 
-Now, let’s make a state for storing the current todo value. We are using useState **state hook** for making state. We need to import it from ‘react’.
-For that add this line at the top of the fileimport React, { useState } from ‘react’. Now, go inside our App then add const [todoValue, setTodoValue] = useState(''). So, here we are making a state **todoValue** and **setTodoValue** is for updating the value of **todoValue** and in the **useState** part, we are just setting the initial value of **todoValue** state by calling useState(). So, if you take a look we are using the array destructing here. **useState** returns an array that the first element of the array is stated name and the second item of the array is the function for updating the value of that state.
+Now, let’s make a state for storing the current todo value. We are using useState **state hook** for making state. We need to import it from __react__.
+For that add this line at the top of the file `import React, { useState } from react`. Now, go inside our App then add const `[todoValue, setTodoValue] = useState('')`. So, here we are making a state **todoValue** and **setTodoValue** is for updating the value of **todoValue** and in the **useState** part, we are just setting the initial value of **todoValue** state by calling useState(). So, if you take a look we are using the array destructing here. **useState** returns an array that the first element of the array is stated name and the second item of the array is the function for updating the value of that state.
 Now, let’s make the **handleChange** function.
 
 ![handleChange for setting current todo value](https://cdn-images-1.medium.com/max/2840/1*H3FQO1MWyEd7miYraXgJ9Q.png)*handleChange for setting current todo value*

@@ -5,7 +5,7 @@ import socialLinks from "../utils/social-links";
 
 const Header = () => (
   <header className="header" id="top">
-    <a href="#top" className="header__topbar" >""</a>
+    <a href="#top" className="header__topbar" />
     <div className="header__content-block">
       <div className="header__logo-sec">
         <Link to="/" className="header__logo">JS</Link>

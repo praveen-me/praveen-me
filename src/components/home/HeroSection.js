@@ -19,7 +19,7 @@ const HeroSection = ( ) => {
       <h3 className="main__author-subhead center">Hi there! I'm</h3>
       <h1 className="main__author-head center">{ site.siteMetadata.title }</h1>
       <p className="main__author-experct">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quos culpa dicta veritatis et iure impedit explicabo commodi. Culpa perferendis mollitia rem error veniam.
+      I am a life long learner and currently working as a React Developer at <a href="https://rtcamp.com">rtCamp</a> . Most of the time I totally evolved in JavaScript stuff like React, Redux, Node, Express, etc.
       <br/><Link to="/about" className="main__content-link">read more...</Link></p>
     </div>
   )
