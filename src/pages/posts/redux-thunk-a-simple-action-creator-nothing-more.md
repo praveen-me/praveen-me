@@ -19,7 +19,7 @@ So, as I mentioned **redux thunk** is just an action creator with some extra pow
 
 ## **How to use a Redux Thunk?**
 
-So, if you want to use the **redux thunk** then you have to install a **redux-thunk **package and import **thunk** from it.
+So, if you want to use the **redux thunk** then you have to install a **redux-thunk** package and import **thunk** from it.
 
 ```js
     import thunk from "redux-thunk";
@@ -39,7 +39,7 @@ Now you have that. So, go to that file where you created your store and pass **c
 
 So, now you just add thunk to your project and you can create your own **thunk** now. I am here making a simple thunk that helps you to make just a better understanding of **thunk**.
 So, suppose you want an app where you just gave a Github username and it will give you the whole data when you submit a form.
-So, let’s just make a simple thunk i.e a function called **setUserData **that takes the only username when the user is submitting a form.
+So, let’s just make a simple thunk i.e a function called **setUserData** that takes the only username when the user is submitting a form.
 
 ```js
     const setUserData = (username) => {
