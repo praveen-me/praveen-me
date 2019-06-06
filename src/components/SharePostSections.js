@@ -12,7 +12,7 @@ const SharePostSection = ({ socialdata }) => {
       title={ title }
       via={via}>
         <span className="social-share__container">
-          <i className="fab fa-twitter"></i>
+          <i className="fab fa-twitter" />
         </span>
       </TwitterShareButton>
     </>
