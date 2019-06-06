@@ -1,5 +1,5 @@
 import React from 'react';
-import { FacebookShareButton, TwitterShareButton } from 'react-share';
+import { TwitterShareButton } from 'react-share';
 
 const SharePostSection = ({ socialdata }) => {
   const { url, title, via } = socialdata;

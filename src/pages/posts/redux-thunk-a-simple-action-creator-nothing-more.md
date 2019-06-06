@@ -25,7 +25,7 @@ So, if you want to use the **redux thunk** then you have to install a **redux-th
     import thunk from "redux-thunk";
 ```
 
-Now you got the redux thunk. Now you have to import **applyMiddlware, **and** compose **from **redux** package.
+Now you got the redux thunk. Now you have to import **applyMiddlware,** and **compose** from **redux** package.
 
 ```js
     import { createStore, applyMiddleware, compose } from 'redux';
