@@ -1,15 +1,9 @@
-// Color Schemes
-// F6F7F5
-// 699FD5
-// E84155
-// 048E92
-// E84155
-
 .header__topbar {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
+  color: #23020a;
   background: repeating-linear-gradient(111deg, #23020a, #23020a 25%, #E84155 0, #E84155 50%, #048E92 0, #048E92 75%, #2F3F6F 0, #2F3F6F);
   display: block;
   height: 15px;
