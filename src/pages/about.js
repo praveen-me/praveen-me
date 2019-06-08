@@ -29,7 +29,7 @@ const About = ( { data } ) => {
           <p>I am a college dropout, Google Udacity Scholar and got a Front End Nanodegree. I also did a Full Stack Development Program from <a href="https://altcampus.io">AltCampus</a> and always greatful of their program that helps me to be quality developer.</p> 
 
           <p>In this blog, I like to write about JavaScript stuff i.e what I explored and find interesting to write about.</p> 
-          <p>In my free time, i.e when I am not coding I like to sleep😬, read philosophies, watch documentaries and Netflix.</p> 
+          <p>In my free time, i.e when I am not coding I like to sleep <span aria-label="Grin Image" role="img" alt="image of grin">😬</span>, read philosophies, watch documentaries and Netflix.</p> 
          </p>
       </div> 
     </LayoutWrapper>
