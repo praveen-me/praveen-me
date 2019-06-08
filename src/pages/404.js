@@ -6,7 +6,6 @@ const NotFoundPage = () => (
   <LayoutWrapper>
     <SEO title="404" />
     <div className="not-found">
-    Apple
     </div>
   </LayoutWrapper>
 )
