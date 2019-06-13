@@ -34,15 +34,13 @@ export default ( { data } ) => {
         <p className="post__info"> 
           <span className="post__date">{ new Date(post.frontmatter.date).toDateString() }</span>  — 
           <span className="post__time">{ time } { time > 1 ? 'minutes' : 'minute' } read</span> 
-          <div className="social-share__wrapper center">
-            <SharePostSection socialdata={{
-              url: `${siteUrl}${post.fields.slug}`,
-              title: `${post.frontmatter.title} \n ${post.excerpt}`,
-              via: author
-            }}/>
-          </div>
         </p>
         <div dangerouslySetInnerHTML={ { __html: post.html } } />
+        <SharePostSection socialdata={{
+          url: `${siteUrl}${post.fields.slug}`,
+          title: `${post.frontmatter.title} \n ${post.excerpt}`,
+          via: author
+        }}/>
       </div>
     </LayoutWrapper>
   )
