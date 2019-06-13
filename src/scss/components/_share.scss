@@ -22,10 +22,21 @@
 		top: calc(50% - 25px);
 		left: 1%;
 	}
+
 }
 
 @media screen and (max-width: 959px) {
 	.social-share__wrapper {
 		margin-left: auto;
+	}
+	
+	.share_button-wrapper {
+		margin: 1rem 0;
+		display: flex;
+		align-items: center;
+
+		.share_button-text {
+			margin: 0 1rem;
+		}
 	}
 }
