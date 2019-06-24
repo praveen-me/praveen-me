@@ -5,7 +5,6 @@ import SEO from "../components/seo";
 import LayoutWrapper from "../components/layoutWrapper";
 
 const About = ( { data } ) => {
-
   return (
     <LayoutWrapper>
     <SEO title="About" keywords={[`gatsby`, `application`, `react`, `portfolio`, `personal website`, `blog`]}/>
