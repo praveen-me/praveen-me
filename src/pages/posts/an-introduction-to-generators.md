@@ -32,18 +32,41 @@ Now, `it` contains that `iterator` and iterator have a method called `next` that
 Here, `value` is the current value that returned from the function and `done` is the boolean value that show if the execution of the function got finished or not. And in case of generator the value after `yield` becomes the `value` of the object when `next` method called. So, further it's going to be executed like this.
 
 ```js
-it.next(); { value: 1, done: false };
+it.next(); // { value: 1, done: false };
 
 // If called it again then
-it.next(); { value: 2, done: false };
+it.next(); // { value: 2, done: false };
 
 // Once More
-it.next(); { value: 3, done: false };
+it.next(); // { value: 3, done: false };
 
 // Let's try one more time
-it.next(); { value: undefined, done: true };
+it.next(); // { value: undefined, done: true };
 ```
 
 At last, when the generator execution finished it returns `value` of `undefined` because there's no value to be returned. 
 
 #### What happens If we put return statement in the middle of the generator function?
+So, for this let's take an example:
+
+```js
+function *generator() {
+  yield 1;
+  return 2;
+  yield 3;
+}
+
+const it = generator();
+```
+If we consider this example then as we know if we called `it.next()` it will return an object. Let's first see the execution of this piece of code.
+
+```js
+it.next(); // {value : 1, done: false}
+
+// Let's call this one more time
+it.next(); // { value: 2  done: true}
+```
+because it when `return` statement executed then function returns `2` and we know that if function finds the `return` statement then that means the execution of the function got completed. <br>
+Whoo!! 😤I think it starts to make sense. 😁
+
+_At the end, `yield` is statement where a generator pauses and when we call `next()` it resumes from that previous point where generator got paused._
