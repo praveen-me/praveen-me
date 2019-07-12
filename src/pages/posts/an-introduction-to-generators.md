@@ -99,3 +99,16 @@ const values = [...it]
 ```
 
 __REMEMBER THAT: A GENERATOR CAN'T BE ROLL BACK FOR THAT YOU NEED TO MAKE A NEW INSTANCE AGAIN. DON'T HAVE AN IDEA WHAT I MEANT, DONT'T WORRY. LET'S CHECKOUT BY AN EXAMPLE 🤟.__ 
+
+So, suppose you wanna run  like this:
+```js
+it.next();
+it.next();
+it.next();
+
+const arr = [...it] ??
+```
+Will be an empty array because you already `it` already executed. Now, that means if you wanna run this again you need to create a new instance i.e `var it2 = generator()`.
+
+## Generator Composition
+That means you can compose one or more generator's in a single generators.
