@@ -108,7 +108,27 @@ it.next();
 
 const arr = [...it] ??
 ```
-Will be an empty array because you already `it` already executed. Now, that means if you wanna run this again you need to create a new instance i.e `var it2 = generator()`.
+Will be an empty array because you already `it` already executed. Now, that means if you wanna run this again you need to create a new instance i.e `const it2 = generator()`.
 
 ## Generator Composition
-That means you can compose one or more generator's in a single generators.
+That means you can compose one or more generator's in a single generators. Let's take an example:
+
+```js
+function *getNumbers(start, end) {
+  for(let i = start; i <= end; i++) yield i;
+}
+
+function *getAllNumbers() {
+  yield* getNumbers(1, 10);
+
+  yield* getNumbers(41, 50);
+
+  yield* getNumbers(61, 70);
+}
+
+for(const value of getAllNumbers()) {
+  console.log(value);
+}
+```
+
+So, here first we create a simple generator `getNumbers` that takes two arguments i.e `start, end` and just loop over that them and on every iteration just yield that value. Then we create another generator `getAllNumbers` this just takes all those 
