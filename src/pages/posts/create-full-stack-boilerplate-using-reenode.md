@@ -37,7 +37,7 @@ After that terminal prompt will ask some questions:
 That's all. Congratulations your starter code is generated. 🚀 <br/>
 You can get help typing `reenode --help` and version of CLI by `reenode --version`.
 
-NPM Link: https://www.npmjs.com/package/reenode
+NPM Link: https://www.npmjs.com/package/reenode <br/>
 Github Link: https://github.com/praveen-me/reenode
 
 **REQUEST**: If you feel issue using it then please comment down here or you can add issue at **reenode's** GitHub repo.
