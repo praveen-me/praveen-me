@@ -1,9 +1,9 @@
 ---
-title: "Create full-stack boilerplates using reenode"
+title: "Create full-stack boilerplate using reenode"
 date: "08-12-2019"
 ---
 
-## Problems with creating fullstack boilerplates:
+## Problems with creating fullstack boilerplate:
 
 Creating a starter kit for full-stack applications need a lot of effort and sometimes it becomes a headache. A small mistake in the initialization of the starter project can break your whole code and then you see a huge pile of console errors.
 
@@ -25,7 +25,7 @@ For that first you need to install it globally by just typing: <br/>
 
 That's so simple. 😃
 
-**reenode** provides `create` command to create you project. For that you just need to run:
+**reenode** provides `create` command to create your project. For that you just need to run:
 
 ```bash
 reenode create project-name
@@ -36,3 +36,12 @@ After that terminal prompt will ask some questions:
 
 That's all. Congratulations your starter code is generated. 🚀 <br/>
 You can get help typing `reenode --help` and version of CLI by `reenode --version`.
+
+NPM Link: https://www.npmjs.com/package/reenode
+Github Link: https://github.com/praveen-me/reenode
+
+**REQUEST**: If you feel issue using it then please comment down here or you can add issue at **reenode's** GitHub repo.
+
+---
+
+Follow me on [Twitter](https://twitter.com/am_pra_veen) and [Github](https://github.com/praveen-me).
