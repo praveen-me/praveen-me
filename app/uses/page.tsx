@@ -1,7 +1,7 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Uses',
+  title: "Uses",
   description:
     "Here's what tech I'm currently using for coding, videos, and music.",
 };
@@ -25,13 +25,6 @@ export default function UsesPage() {
         </ul>
         <h3 id="coding">Coding</h3>
         <ul>
-          <li>
-            Editor: VSCode (
-            <a href="https://gist.github.com/leerob/e7883ab35d900b8cbb684ac77e7c4703">
-              Settings / Extensions
-            </a>
-            )
-          </li>
           <li>Theme: One Dark Pro</li>
           <li>Terminal: Hyper / zsh</li>
         </ul>
