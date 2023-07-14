@@ -59,10 +59,7 @@ jobs:
           version: 8.6.7
       - name: Setup Node
         uses: actions/setup-node@v3
-      - name: Install packages
-        id: install-packages
-        run: |
-          pnpm i
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
         with:
@@ -81,8 +78,16 @@ jobs:
           # If source files changed but packages didn't, rebuild from a prior cache.
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
-      - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+
+      - name: Make envfile
+        uses: SpicyPizza/create-envfile@v2.0
+        with:
+          envkey_DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          file_name: .env
+      - name: Install packages
+        id: install-packages
+        run: |
+          pnpm i
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Static HTML export with Next.js
