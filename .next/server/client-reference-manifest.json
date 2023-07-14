@@ -1,0 +1,247 @@
+{
+  "ssrModuleMapping": {
+    "(app-client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/error-boundary.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/error-boundary.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/app-router.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/app-router.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/layout-router.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/layout-router.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/render-from-template-context.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/render-from-template-context.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/components/sidebar.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/components/sidebar.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/.pnpm/@vercel+analytics@1.0.1/node_modules/@vercel/analytics/dist/react/index.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/.pnpm/@vercel+analytics@1.0.1/node_modules/@vercel/analytics/dist/react/index.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/image-component.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/image-component.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/error.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/error.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/link.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/link.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    }
+  },
+  "edgeSSRModuleMapping": {},
+  "clientModules": {
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/error-boundary.js": {
+      "id": "(app-client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/error-boundary.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/esm/client/components/error-boundary.js": {
+      "id": "(app-client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/error-boundary.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/app-router.js": {
+      "id": "(app-client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/app-router.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/esm/client/components/app-router.js": {
+      "id": "(app-client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/app-router.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/layout-router.js": {
+      "id": "(app-client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/layout-router.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/esm/client/components/layout-router.js": {
+      "id": "(app-client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/layout-router.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/render-from-template-context.js": {
+      "id": "(app-client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/render-from-template-context.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/esm/client/components/render-from-template-context.js": {
+      "id": "(app-client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/render-from-template-context.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js": {
+      "id": "(app-client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/esm/client/components/static-generation-searchparams-bailout-provider.js": {
+      "id": "(app-client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
+      "name": "*",
+      "chunks": [
+        "app-client-internals:static/chunks/app-client-internals.js"
+      ],
+      "async": false
+    },
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/app/components/sidebar.tsx": {
+      "id": "(app-client)/./app/components/sidebar.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/app/global.css": {
+      "id": "(app-client)/./app/global.css",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/node_modules/.pnpm/@vercel+analytics@1.0.1/node_modules/@vercel/analytics/dist/react/index.js": {
+      "id": "(app-client)/./node_modules/.pnpm/@vercel+analytics@1.0.1/node_modules/@vercel/analytics/dist/react/index.js",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/font/local/target.css?{\"path\":\"app/layout.tsx\",\"import\":\"\",\"arguments\":[{\"src\":[{\"path\":\"../public/fonts/Graphik-Regular.ttf\",\"weight\":\"400\",\"style\":\"normal\"},{\"path\":\"../public/fonts/Graphik-Medium.ttf\",\"weight\":\"600\",\"style\":\"bold\"}],\"variable\":\"--font-graphik\",\"display\":\"swap\"}],\"variableName\":\"graphik\"}": {
+      "id": "(app-client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/font/local/target.css?{\"path\":\"app/layout.tsx\",\"import\":\"\",\"arguments\":[{\"src\":[{\"path\":\"../public/fonts/Graphik-Regular.ttf\",\"weight\":\"400\",\"style\":\"normal\"},{\"path\":\"../public/fonts/Graphik-Medium.ttf\",\"weight\":\"600\",\"style\":\"bold\"}],\"variable\":\"--font-graphik\",\"display\":\"swap\"}],\"variableName\":\"graphik\"}",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/image-component.js": {
+      "id": "(app-client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/image-component.js",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/esm/client/image-component.js": {
+      "id": "(app-client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/image-component.js",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/app/error.tsx": {
+      "id": "(app-client)/./app/error.tsx",
+      "name": "*",
+      "chunks": [
+        "app/error:static/chunks/app/error.js"
+      ],
+      "async": false
+    },
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/link.js": {
+      "id": "(app-client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/blog/page:static/chunks/app/blog/page.js"
+      ],
+      "async": false
+    },
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/esm/client/link.js": {
+      "id": "(app-client)/./node_modules/.pnpm/next@13.4.9_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/blog/page:static/chunks/app/blog/page.js"
+      ],
+      "async": false
+    }
+  },
+  "entryCSSFiles": {
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/app/layout": [
+      "static/css/app/layout.css"
+    ],
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/app/page": [],
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/app/error": [],
+    "/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/app/blog/page": []
+  }
+}

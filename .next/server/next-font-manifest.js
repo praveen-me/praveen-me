@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/praveenkumarsaini/Documents/learn/praveen-me.github.io/app/layout\":[\"static/media/5863dc867561b465-s.p.ttf\",\"static/media/c78e5b1fb9b48c59-s.p.ttf\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
