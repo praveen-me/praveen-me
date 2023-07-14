@@ -3,7 +3,6 @@
 import anIntroductionToGeneratorsMdx from './an-introduction-to-generators.mdx.json' assert { type: 'json' }
 import createFullStackBoilerplateUsingReenodeMdx from './create-full-stack-boilerplate-using-reenode.mdx.json' assert { type: 'json' }
 import doStaticRoutingWithNodeMdx from './do-static-routing-with-node.mdx.json' assert { type: 'json' }
-import helloWorldMdx from './hello-world.mdx.json' assert { type: 'json' }
 import howUdacityGaveConfidenceToMeMdx from './how-udacity-gave-confidence-to-me.mdx.json' assert { type: 'json' }
 import implementingSimpleSpaRoutingUsingVanillaJavascriptMdx from './implementing-simple-spa-routing-using-vanilla-javascript.mdx.json' assert { type: 'json' }
 import javascriptClassesLetsKnowBehindTheScenesMdx from './javascript-classes-lets-know-behind-the-scenes.mdx.json' assert { type: 'json' }
@@ -11,4 +10,4 @@ import jwtJsonWebTokenImplementationWithNodeMdx from './jwt-json-web-token-imple
 import makeATodoListUsingReactHooksMdx from './make-a-todo-list-using-react-hooks.mdx.json' assert { type: 'json' }
 import scopeLocalGlobalAndLexicalMdx from './scope-local-global-and-lexical.mdx.json' assert { type: 'json' }
 
-export const allBlogs = [anIntroductionToGeneratorsMdx, createFullStackBoilerplateUsingReenodeMdx, doStaticRoutingWithNodeMdx, helloWorldMdx, howUdacityGaveConfidenceToMeMdx, implementingSimpleSpaRoutingUsingVanillaJavascriptMdx, javascriptClassesLetsKnowBehindTheScenesMdx, jwtJsonWebTokenImplementationWithNodeMdx, makeATodoListUsingReactHooksMdx, scopeLocalGlobalAndLexicalMdx]
+export const allBlogs = [anIntroductionToGeneratorsMdx, createFullStackBoilerplateUsingReenodeMdx, doStaticRoutingWithNodeMdx, howUdacityGaveConfidenceToMeMdx, implementingSimpleSpaRoutingUsingVanillaJavascriptMdx, javascriptClassesLetsKnowBehindTheScenesMdx, jwtJsonWebTokenImplementationWithNodeMdx, makeATodoListUsingReactHooksMdx, scopeLocalGlobalAndLexicalMdx]
