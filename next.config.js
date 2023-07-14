@@ -17,21 +17,21 @@ const nextConfig = {
       },
     ],
   },
-  redirects() {
-    try {
-      return get("redirects");
-    } catch {
-      return [];
-    }
-  },
-  headers() {
-    return [
-      {
-        source: "/(.*)",
-        headers: securityHeaders,
-      },
-    ];
-  },
+  // redirects() {
+  //   try {
+  //     return get("redirects");
+  //   } catch {
+  //     return [];
+  //   }
+  // },
+  // headers() {
+  //   return [
+  //     {
+  //       source: "/(.*)",
+  //       headers: securityHeaders,
+  //     },
+  //   ];
+  // },
   output: "export",
 };
 
