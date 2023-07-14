@@ -1,41 +1,41 @@
-import './global.css';
-import clsx from 'clsx';
-import type { Metadata } from 'next';
-import localFont from 'next/font/local';
-import Sidebar from './components/sidebar';
-import { Analytics } from '@vercel/analytics/react';
+import "./global.css";
+import clsx from "clsx";
+import type { Metadata } from "next";
+import localFont from "next/font/local";
+import Sidebar from "./components/sidebar";
+import { Analytics } from "@vercel/analytics/react";
 
 const graphik = localFont({
   src: [
     {
-      path: '../public/fonts/Graphik-Regular.ttf',
-      weight: '400',
-      style: 'normal',
+      path: "../public/fonts/Graphik-Regular.ttf",
+      weight: "400",
+      style: "normal",
     },
     {
-      path: '../public/fonts/Graphik-Medium.ttf',
-      weight: '600',
-      style: 'bold',
+      path: "../public/fonts/Graphik-Medium.ttf",
+      weight: "600",
+      style: "bold",
     },
   ],
-  variable: '--font-graphik',
-  display: 'swap',
+  variable: "--font-graphik",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://leerob.io'),
+  metadataBase: new URL("https://praveen-me.github.io"),
   title: {
-    default: 'Lee Robinson',
-    template: '%s | Lee Robinson',
+    default: "Praveen Kumar Saini",
+    template: "%s | Praveen Kumar Saini",
   },
-  description: 'Developer, writer, and creator.',
+  description: "Developer, writer, and creator.",
   openGraph: {
-    title: 'Lee Robinson',
-    description: 'Developer, writer, and creator.',
-    url: 'https://leerob.io',
-    siteName: 'Lee Robinson',
-    locale: 'en-US',
-    type: 'website',
+    title: "Praveen Kumar Saini",
+    description: "Developer, writer, and creator.",
+    url: "https://praveen-me.github.io",
+    siteName: "Praveen Kumar Saini",
+    locale: "en-US",
+    type: "website",
   },
   robots: {
     index: true,
@@ -43,18 +43,18 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   twitter: {
-    title: 'Lee Robinson',
-    card: 'summary_large_image',
+    title: "Praveen Kumar Saini",
+    card: "summary_large_image",
   },
   verification: {
-    google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
-    yandex: '14d2e73487fa6c71',
+    google: "eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw",
+    yandex: "14d2e73487fa6c71",
   },
 };
 
@@ -67,7 +67,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={clsx(
-        'text-black bg-white dark:text-white dark:bg-[#111010]',
+        "text-black bg-white dark:text-white dark:bg-[#111010]",
         graphik.variable
       )}
     >

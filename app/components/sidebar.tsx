@@ -1,26 +1,23 @@
-'use client';
+"use client";
 
-import clsx from 'clsx';
-import { usePathname } from 'next/navigation';
-import Link from 'next/link';
-import { LayoutGroup, motion } from 'framer-motion';
+import clsx from "clsx";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { LayoutGroup, motion } from "framer-motion";
 
 const navItems = {
-  '/': {
-    name: 'home',
+  "/": {
+    name: "home",
   },
-  '/blog': {
-    name: 'blog',
-  },
-  '/guestbook': {
-    name: 'guestbook',
+  "/blog": {
+    name: "blog",
   },
 };
 
 export default function Navbar() {
-  let pathname = usePathname() || '/';
-  if (pathname.includes('/blog/')) {
-    pathname = '/blog';
+  let pathname = usePathname() || "/";
+  if (pathname.includes("/blog/")) {
+    pathname = "/blog";
   }
 
   return (
@@ -39,9 +36,9 @@ export default function Navbar() {
                     key={path}
                     href={path}
                     className={clsx(
-                      'transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle',
+                      "transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle",
                       {
-                        'text-neutral-500': !isActive,
+                        "text-neutral-500": !isActive,
                       }
                     )}
                   >
@@ -52,7 +49,7 @@ export default function Navbar() {
                           className="absolute h-[1px] top-7 mx-2 inset-0 bg-neutral-200 dark:bg-neutral-800 z-[-1] dark:bg-gradient-to-r from-transparent to-neutral-900"
                           layoutId="sidebar"
                           transition={{
-                            type: 'spring',
+                            type: "spring",
                             stiffness: 350,
                             damping: 30,
                           }}
