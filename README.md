@@ -30,8 +30,6 @@ I'm a Full Stack Developer based in Dharamshala, India. I specialize in creating
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=praveen-me&theme=tokyonight" />
 </p>
 
-![Praveen's GitHub Skyline](https://skyline.github.com/praveen-me/2022)
-
 ## 🏆 Projects
 
 - **[RN Fashion App](https://github.com/praveen-me/rn_fashion_app)**: Fashion App UI prototype built with React Native with nice gestures and animations with form validations.
