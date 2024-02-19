@@ -1,4 +1,4 @@
-# Hello, I'm Praveen Kumar Saini 👋
+# Hi there, I'm Praveen Kumar Saini 👋
 
 I'm a Full Stack Developer based in Dharamshala, India. I specialize in creating robust, scalable, and high-performance applications with a user-centric approach. My skills span across numerous technologies including but not limited to React Native, Vue, Nuxt.js, Next.js, and Node.js. I also have an in-depth understanding of AWS functionalities and database technologies like PostgreSQL and Redis.
 
