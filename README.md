@@ -38,8 +38,8 @@ I'm a Full Stack Developer based in Dharamshala, India. I specialize in creating
 - **[Tunes](https://github.com/praveen-me/tunes)**: Simple music player having ability to analyze songs' beats and display a bar graph to that.
 
 ## 📄 Experience
-
-- **Full Stack Developer (Freelancer)**: Audvice, Salzburg (2021-05 - Present)
+- **Lead Mobile Developer (Remote\Gurugram)**: Apollo 24|7, Salzburg (2023-08 - Present)
+- **Full Stack Developer (Freelancer)**: Audvice, Salzburg (2021-05 - 2023-08)
 - **React Native Developer (Freelancer)**: Jitera, Tokoyo (2021-04 - 2021-05)
 - **Full Stack Developer (Freelancer)**: Vested Finance, California (2020-11 - 2021-05)
 - **Software Developer**: CityMall, Gurugram (2019-12 - 2020-12)
