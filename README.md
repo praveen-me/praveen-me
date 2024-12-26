@@ -39,11 +39,11 @@ I'm a Full Stack Developer based in Dharamshala, India. I specialize in creating
 
 ## 📄 Experience
 - **Lead Mobile Developer (Hybrid)**: Apollo 24|7, Gurugram (2023-08 - Present)
-- **Full Stack Developer (Freelancer)**: Audvice, Salzburg (2021-05 - 2023-08)
-- **React Native Developer (Freelancer)**: Jitera, Tokoyo (2021-04 - 2021-05)
-- **Full Stack Developer (Freelancer)**: Vested Finance, California (2020-11 - 2021-05)
+- **Full Stack Developer (Contract)**: Audvice, Salzburg (2021-05 - 2023-08)
+- **React Native Developer (Contract)**: Jitera, Tokoyo (2021-04 - 2021-05)
+- **Full Stack Developer (Contract)**: Vested Finance, California (2020-11 - 2021-05)
 - **Software Developer**: CityMall, Gurugram (2019-12 - 2020-12)
-- **Frontend Developer (Freelancer)**: WorkerB, California (2020-05 - 2020-09)
+- **Frontend Developer (Contract)**: WorkerB, California (2020-05 - 2020-09)
 - **React Developer**: rtCamp, Pune (2019-04 - 2019-12)
 
 ## 🎓 Education
