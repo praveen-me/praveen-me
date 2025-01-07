@@ -38,6 +38,9 @@ I'm a Full Stack Developer based in Dharamshala, India. I specialize in creating
 - **[Tunes](https://github.com/praveen-me/tunes)**: Simple music player having ability to analyze songs' beats and display a bar graph to that.
 
 ## 📄 Experience
+- **Tech Lead (Remote)**: Hackerlabs, Dharmshala (2024-10 - Present)
+- **Senior Full Stack AI Developer (Remote)**: Zaideh Global, Gurugram (2024-12 - Present)
+- **Senior Full Stack Mobile Developer (Remote)**: Beehive (2024-10 - Present)
 - **Lead Mobile Developer (Hybrid)**: Apollo 24|7, Gurugram (2023-08 - Present)
 - **Full Stack Developer (Contract)**: Audvice, Salzburg (2021-05 - 2023-08)
 - **React Native Developer (Contract)**: Jitera, Tokoyo (2021-04 - 2021-05)
