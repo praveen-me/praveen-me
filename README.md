@@ -39,7 +39,6 @@ I'm a Full Stack Developer based in Dharamshala, India. I specialize in creating
 
 ## 📄 Experience
 - **Tech Lead (Remote)**: Hackerlabs, Dharmshala (2024-10 - 2025-02)
-- **Senior Full Stack AI Developer (Contract)**: Zaideh Global (2024-12 - Present)
 - **Senior Full Stack Mobile Developer (Contract)**: Beehive (2024-10 - 2025-05)
 - **Lead Mobile Developer (Hybrid)**: Apollo 24|7, Gurugram (2023-08 - 2025-03)
 - **Full Stack Developer (Contract)**: Audvice, Salzburg (2021-05 - 2023-08)
